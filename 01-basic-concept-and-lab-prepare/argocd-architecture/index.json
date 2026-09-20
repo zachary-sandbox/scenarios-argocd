@@ -1,37 +1,32 @@
 {
-  "title": "Argo-CD Architecture Components & End-to-End Workflow",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-components-overview",
-      "desc": "Overview of five core components",
-      "text": "step1-components-overview/text.md",
-      "verify": {
-        "linux": "step1-components-overview/verify.sh",
-        "windows": "step1-components-overview/verify.ps1"
+  "title": "Argo‑CD Architecture Components & End‑to‑End Workflow",
+  "description": "Learn Argo‑CD five core components and full sync workflow",
+  "details": {
+    "steps": [
+      {
+        "title": "Five Core Components Overview",
+        "text": "step1-components-overview/text.md"
+      },
+      {
+        "title": "Repo‑Server Responsibilities",
+        "text": "step2-repo-server-duty/text.md"
+      },
+      {
+        "title": "End‑to‑End Git Sync Workflow",
+        "text": "step3-workflow-end-to-end/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-repo-server-duty",
-      "desc": "Understand repo-server manifest rendering service",
-      "text": "step2-repo-server-duty/text.md",
-      "verify": {
-        "linux": "step2-repo-server-duty/verify.sh",
-        "windows": "step2-repo-server-duty/verify.ps1"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-workflow-end-to-end",
-      "desc": "Full end-to-end Git change synchronization workflow",
-      "text": "step3-workflow-end-to-end/text.md",
-      "verify": {
-        "linux": "step3-workflow-end-to-end/verify.sh",
-        "windows": "step3-workflow-end-to-end/verify.ps1"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
-   "imageid": "kubernetes-kubeadm-1node"
+    "imageid": "kubernetes-kubeadm-2nodes"
   }
 }

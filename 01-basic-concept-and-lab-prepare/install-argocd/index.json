@@ -1,46 +1,36 @@
 {
-  "title": "Install Argo-CD Official Manifests",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-create-argocd-namespace",
-      "desc": "Create argocd target namespace",
-      "text": "step1-create-argocd-namespace/text.md",
-      "verify": {
-        "linux": "step1-create-argocd-namespace/verify.sh",
-        "windows": "step1-create-argocd-namespace/verify.ps1"
+  "title": "Install Argo‑CD Official Manifests",
+  "description": "Deploy Argo‑CD using official install manifest with server‑side apply",
+  "details": {
+    "steps": [
+      {
+        "title": "Create argocd Namespace",
+        "text": "step1-create-argocd-namespace/text.md"
+      },
+      {
+        "title": "Apply Official Install Manifest",
+        "text": "step2-apply-official-manifests/text.md"
+      },
+      {
+        "title": "Wait for CRD Established",
+        "text": "step3-wait-crd-established/text.md"
+      },
+      {
+        "title": "Wait All Pods Enter Running",
+        "text": "step4-wait-all-pod-running/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-apply-official-manifests",
-      "desc": "Apply install.yaml manifest with--server--side--force-conflicts",
-      "text": "step2-apply-official-manifests/text.md",
-      "verify": {
-        "linux": "step2-apply-official-manifests/verify.sh",
-        "windows": "step2-apply-official-manifests/verify.ps1"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-wait-crd-established",
-      "desc": "Wait for Argo-CD CustomResourceDefinitions established",
-      "text": "step3-wait-crd-established/text.md",
-      "verify": {
-        "linux": "step3-wait-crd-established/verify.sh",
-        "windows": "step3-wait-crd-established/verify.ps1"
-      }
-    },
-    {
-      "name": "step4-wait-all-pod-running",
-      "desc": "Wait for all pods inside argocd namespace reach Running phase",
-      "text": "step4-wait-all-pod-running/text.md",
-      "verify": {
-        "linux": "step4-wait-all-pod-running/verify.sh",
-        "windows": "step4-wait-all-pod-running/verify.ps1"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
-    "imageid": "kubernetes-kubeadm-1node"
+    "imageid": "kubernetes-kubeadm-2nodes"
   }
 }
