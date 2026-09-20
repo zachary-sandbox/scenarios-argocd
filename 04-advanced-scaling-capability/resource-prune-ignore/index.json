@@ -1,0 +1,34 @@
+{
+  "title": "Resource Prune and Ignore",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-prune-behavior",
+      "desc": "Understand prune behavior",
+      "text": "step1-prune-behavior/text.md",
+      "verify": {
+        "linux": "step1-prune-behavior/verify.sh"
+      }
+    },
+    {
+      "name": "step2-compare-options-ignore",
+      "desc": "Use compare-options to ignore resources",
+      "text": "step2-compare-options-ignore/text.md",
+      "verify": {
+        "linux": "step2-compare-options-ignore/verify.sh"
+      }
+    },
+    {
+      "name": "step3-global-resource-exclusions",
+      "desc": "Configure global resource exclusions",
+      "text": "step3-global-resource-exclusions/text.md",
+      "verify": {
+        "linux": "step3-global-resource-exclusions/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

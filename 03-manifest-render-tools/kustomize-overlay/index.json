@@ -1,0 +1,34 @@
+{
+  "title": "Kustomize Overlay Practice",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-kustomize-base-and-overlay",
+      "desc": "Understand base and overlay structure",
+      "text": "step1-kustomize-base-and-overlay/text.md",
+      "verify": {
+        "linux": "step1-kustomize-base-and-overlay/verify.sh"
+      }
+    },
+    {
+      "name": "step2-create-kustomize-app",
+      "desc": "Create Argo CD Application pointing to Kustomize overlay",
+      "text": "step2-create-kustomize-app/text.md",
+      "verify": {
+        "linux": "step2-create-kustomize-app/verify.sh"
+      }
+    },
+    {
+      "name": "step3-image-and-patch-override",
+      "desc": "Practice image override and patches",
+      "text": "step3-image-and-patch-override/text.md",
+      "verify": {
+        "linux": "step3-image-and-patch-override/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

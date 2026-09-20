@@ -1,0 +1,34 @@
+{
+  "title": "Auto‑Sync, Self‑Heal and Prune Behaviour",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1‑enable‑automated‑sync",
+      "desc": "Enable automated sync policy inside Application syncPolicy",
+      "text": "step1-enable-automated-sync/text.md",
+      "verify": {
+        "linux": "step1-enable-automated-sync/verify.sh"
+      }
+    },
+    {
+      "name": "step2‑test‑selfheal‑behaviour",
+      "desc": "Test selfHeal: manual cluster edits get auto‑reverted",
+      "text": "step2-test-selfheal-behaviour/text.md",
+      "verify": {
+        "linux": "step2-test-selfheal-behaviour/verify.sh"
+      }
+    },
+    {
+      "name": "step3‑test‑prune‑behaviour",
+      "desc": "Test prune: delete manifest in git, resource disappears on cluster",
+      "text": "step3-test-prune-behaviour/text.md",
+      "verify": {
+        "linux": "step3-test-prune-behaviour/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

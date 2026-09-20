@@ -1,0 +1,34 @@
+{
+  "title": "End‑to‑End Guestbook Sample Workflow",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1‑deploy‑guestbook‑app",
+      "desc": "Create guestbook Argo‑CD application and let it sync",
+      "text": "step1-deploy-guestbook-app/text.md",
+      "verify": {
+        "linux": "step1-deploy-guestbook-app/verify.sh"
+      }
+    },
+    {
+      "name": "step2‑modify‑git‑image‑tag",
+      "desc": "Change container image tag in git manifest, watch auto‑sync effect",
+      "text": "step2-modify-git-image-tag/text.md",
+      "verify": {
+        "linux": "step2-modify-git-image-tag/verify.sh"
+      }
+    },
+    {
+      "name": "step3‑delete‑app‑observe‑prune",
+      "desc": "Delete Application CR resource, check corresponding k8s resources get cleaned‑up",
+      "text": "step3-delete-app-observe-prune/text.md",
+      "verify": {
+        "linux": "step3-delete-app-observe-prune/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Helm Values and Parameters",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-values-yaml-basic",
+      "desc": "Use values.yaml to customize Helm chart",
+      "text": "step1-values-yaml-basic/text.md",
+      "verify": {
+        "linux": "step1-values-yaml-basic/verify.sh"
+      }
+    },
+    {
+      "name": "step2-helm-parameters-in-argocd",
+      "desc": "Override Helm parameters in Argo CD Application",
+      "text": "step2-helm-parameters-in-argocd/text.md",
+      "verify": {
+        "linux": "step2-helm-parameters-in-argocd/verify.sh"
+      }
+    },
+    {
+      "name": "step3-multi-values-files",
+      "desc": "Use multiple values files for environment separation",
+      "text": "step3-multi-values-files/text.md",
+      "verify": {
+        "linux": "step3-multi-values-files/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

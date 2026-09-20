@@ -1,0 +1,34 @@
+{
+  "title": "Plain YAML Manifest Source",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-create-plain-yaml-app",
+      "desc": "Create an Application that points to a plain YAML Git directory",
+      "text": "step1-create-plain-yaml-app/text.md",
+      "verify": {
+        "linux": "step1-create-plain-yaml-app/verify.sh"
+      }
+    },
+    {
+      "name": "step2-modify-yaml-in-git",
+      "desc": "Modify a YAML file in Git and observe OutOfSync / Sync behavior",
+      "text": "step2-modify-yaml-in-git/text.md",
+      "verify": {
+        "linux": "step2-modify-yaml-in-git/verify.sh"
+      }
+    },
+    {
+      "name": "step3-delete-yaml-and-prune",
+      "desc": "Delete a YAML file from Git and verify prune behavior",
+      "text": "step3-delete-yaml-and-prune/text.md",
+      "verify": {
+        "linux": "step3-delete-yaml-and-prune/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

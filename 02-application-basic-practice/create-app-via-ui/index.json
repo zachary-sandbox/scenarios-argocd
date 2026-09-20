@@ -1,0 +1,34 @@
+{
+  "title": "Create Application via Argo‑CD Web UI",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1‑ui‑fill‑basic‑info",
+      "desc": "Fill application basic metadata inside UI create form",
+      "text": "step1-ui-fill-basic-info/text.md",
+      "verify": {
+        "linux": "step1-ui-fill-basic-info/verify.sh"
+      }
+    },
+    {
+      "name": "step2‑ui‑configure‑source‑dest",
+      "desc": "Configure git source repository and destination deployment target",
+      "text": "step2-ui-configure-source-dest/text.md",
+      "verify": {
+        "linux": "step2-ui-configure-source-dest/verify.sh"
+      }
+    },
+    {
+      "name": "step3‑ui‑observe‑app‑status",
+      "desc": "Create application and observe sync / health status in web UI",
+      "text": "step3-ui-observe-app-status/text.md",
+      "verify": {
+        "linux": "step3-ui-observe-app-status/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "path": "app-of-apps-pattern" },
+    { "path": "applicationset-generators" },
+    { "path": "multi-cluster-manage" },
+    { "path": "sync-hooks-pre-post" },
+    { "path": "resource-prune-ignore" },
+    { "path": "argocd-self-manage" }
+  ]
+}

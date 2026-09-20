@@ -1,0 +1,37 @@
+{
+  "title": "Provision Local Kubernetes Lab with Kind",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-install-kind",
+      "desc": "Install kind binary tool",
+      "text": "step1-install-kind/text.md",
+      "verify": {
+        "linux": "step1-install-kind/verify.sh",
+        "windows": "step1-install-kind/verify.ps1"
+      }
+    },
+    {
+      "name": "step2-create-kind-cluster",
+      "desc": "Create kind cluster named argocd-lab",
+      "text": "step2-create-kind-cluster/text.md",
+      "verify": {
+        "linux": "step2-create-kind-cluster/verify.sh",
+        "windows": "step2-create-kind-cluster/verify.ps1"
+      }
+    },
+    {
+      "name": "step3-validate-cluster-ready",
+      "desc": "Validate Kubernetes node Ready status and kubectl context",
+      "text": "step3-validate-cluster-ready/text.md",
+      "verify": {
+        "linux": "step3-validate-cluster-ready/verify.sh",
+        "windows": "step3-validate-cluster-ready/verify.ps1"
+      }
+    }
+  ],
+  "backend": {
+   "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

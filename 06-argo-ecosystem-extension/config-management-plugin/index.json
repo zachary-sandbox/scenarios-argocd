@@ -1,0 +1,34 @@
+{
+  "title": "Custom Config Management Plugin",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-cmp-concept",
+      "desc": "Config‑Management‑Plugin working principle",
+      "text": "step1-cmp-concept/text.md",
+      "verify": {
+        "linux": "step1-cmp-concept/verify.sh"
+      }
+    },
+    {
+      "name": "step2-register-plugin",
+      "desc": "Register custom plugin configmap and patch repo‑server",
+      "text": "step2-register-plugin/text.md",
+      "verify": {
+        "linux": "step2-register-plugin/verify.sh"
+      }
+    },
+    {
+      "name": "step3-use-plugin-in-application",
+      "desc": "Create Application using custom config management plugin, verify render output",
+      "text": "step3-use-plugin-in-application/text.md",
+      "verify": {
+        "linux": "step3-use-plugin-in-application/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

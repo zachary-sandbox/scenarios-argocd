@@ -1,0 +1,34 @@
+{
+  "title": "SSO OIDC Integration with Dex",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-dex-oidc-concept",
+      "desc": "Dex as identity broker concept",
+      "text": "step1-dex-oidc-concept/text.md",
+      "verify": {
+        "linux": "step1-dex-oidc-concept/verify.sh"
+      }
+    },
+    {
+      "name": "step2-configure-dex-connector",
+      "desc": "Modify argocd‑dex‑config configmap add OIDC connector",
+      "text": "step2-configure-dex-connector/text.md",
+      "verify": {
+        "linux": "step2-configure-dex-connector/verify.sh"
+      }
+    },
+    {
+      "name": "step3-test-sso-login-flow",
+      "desc": "Test SSO login and RBAC group mapping",
+      "text": "step3-test-sso-login-flow/text.md",
+      "verify": {
+        "linux": "step3-test-sso-login-flow/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

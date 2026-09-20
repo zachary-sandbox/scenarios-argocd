@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "path": "01-basic-concept-and-lab-prepare" },
+    { "path": "02-application-basic-practice" },
+    { "path": "03-manifest-render-tools" },
+    { "path": "04-advanced-scaling-capability" },
+    { "path": "05-production-ops-security-ci-integration" },
+    { "path": "06-argo-ecosystem-extension" }
+  ]
+}

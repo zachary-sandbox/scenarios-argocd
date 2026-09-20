@@ -1,0 +1,11 @@
+{
+  "items": [
+    { "path": "rbac-permission" },
+    { "path": "sso-oidc-dex" },
+    { "path": "notifications" },
+    { "path": "prometheus-metrics" },
+    { "path": "ha-install-upgrade" },
+    { "path": "troubleshooting" },
+    { "path": "jenkins-argocd-gitops" }
+  ]
+}

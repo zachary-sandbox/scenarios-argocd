@@ -1,0 +1,34 @@
+{
+  "title": "App-of-Apps Pattern",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-pattern-concept",
+      "desc": "Understand App-of-Apps concept",
+      "text": "step1-pattern-concept/text.md",
+      "verify": {
+        "linux": "step1-pattern-concept/verify.sh"
+      }
+    },
+    {
+      "name": "step2-create-parent-app",
+      "desc": "Create parent Application that manages child Application CRs",
+      "text": "step2-create-parent-app/text.md",
+      "verify": {
+        "linux": "step2-create-parent-app/verify.sh"
+      }
+    },
+    {
+      "name": "step3-add-child-app-in-git",
+      "desc": "Add child Application CR in Git and observe auto creation",
+      "text": "step3-add-child-app-in-git/text.md",
+      "verify": {
+        "linux": "step3-add-child-app-in-git/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

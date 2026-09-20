@@ -1,0 +1,46 @@
+{
+  "title": "Argo-CD Web UI & CLI Login Validation",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-install-argocd-cli",
+      "desc": "Install argocd command-line binary",
+      "text": "step1-install-argocd-cli/text.md",
+      "verify": {
+        "linux": "step1-install-argocd-cli/verify.sh",
+        "windows": "step1-install-argocd-cli/verify.ps1"
+      }
+    },
+    {
+      "name": "step2-obtain-admin-initial-password",
+      "desc": "Extract admin initial password from argocd-initial-admin-secret",
+      "text": "step2-obtain-admin-initial-password/text.md",
+      "verify": {
+        "linux": "step2-obtain-admin-initial-password/verify.sh",
+        "windows": "step2-obtain-admin-initial-password/verify.ps1"
+      }
+    },
+    {
+      "name": "step3-port-forward-access-ui",
+      "desc": "Port-forward to expose Web UI service, browser login test",
+      "text": "step3-port-forward-access-ui/text.md",
+      "verify": {
+        "linux": "step3-port-forward-access-ui/verify.sh",
+        "windows": "step3-port-forward-access-ui/verify.ps1"
+      }
+    },
+    {
+      "name": "step4-argocd-cli-login-validate",
+      "desc": "Run argocd login command and validate connectivity via argocd version",
+      "text": "step4-argocd-cli-login-validate/text.md",
+      "verify": {
+        "linux": "step4-argocd-cli-login-validate/verify.sh",
+        "windows": "step4-argocd-cli-login-validate/verify.ps1"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

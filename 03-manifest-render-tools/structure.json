@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "path": "plain-yaml" },
+    { "path": "kustomize-overlay" },
+    { "path": "helm-chart-basic" },
+    { "path": "helm-values-params" },
+    { "path": "private-git-helm-repo" }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "items": [
+    { "path": "argorollouts-canary-bluegreen" },
+    { "path": "config-management-plugin" }
+  ]
+}

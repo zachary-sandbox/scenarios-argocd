@@ -1,0 +1,34 @@
+{
+  "title": "Sync Hooks Practice",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-hook-concepts",
+      "desc": "Understand PreSync, Sync, PostSync hooks",
+      "text": "step1-hook-concepts/text.md",
+      "verify": {
+        "linux": "step1-hook-concepts/verify.sh"
+      }
+    },
+    {
+      "name": "step2-create-hook-job",
+      "desc": "Create hook Job with annotation",
+      "text": "step2-create-hook-job/text.md",
+      "verify": {
+        "linux": "step2-create-hook-job/verify.sh"
+      }
+    },
+    {
+      "name": "step3-observe-hook-execution",
+      "desc": "Observe hook execution order and failure behavior",
+      "text": "step3-observe-hook-execution/text.md",
+      "verify": {
+        "linux": "step3-observe-hook-execution/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

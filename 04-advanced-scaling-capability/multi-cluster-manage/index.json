@@ -1,0 +1,34 @@
+{
+  "title": "Multi-Cluster Management",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-multi-cluster-concept",
+      "desc": "Understand multi-cluster management model",
+      "text": "step1-multi-cluster-concept/text.md",
+      "verify": {
+        "linux": "step1-multi-cluster-concept/verify.sh"
+      }
+    },
+    {
+      "name": "step2-register-remote-cluster",
+      "desc": "Register remote Kubernetes cluster into Argo CD",
+      "text": "step2-register-remote-cluster/text.md",
+      "verify": {
+        "linux": "step2-register-remote-cluster/verify.sh"
+      }
+    },
+    {
+      "name": "step3-deploy-to-remote-cluster",
+      "desc": "Deploy Application to remote cluster",
+      "text": "step3-deploy-to-remote-cluster/text.md",
+      "verify": {
+        "linux": "step3-deploy-to-remote-cluster/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

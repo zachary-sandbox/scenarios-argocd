@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "path": "application-crd-intro" },
+    { "path": "create-app-via-ui" },
+    { "path": "create-app-via-cli" },
+    { "path": "sync-operation" },
+    { "path": "auto-sync-selfheal" },
+    { "path": "sample-guestbook" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Understand Argo‑CD Application CRD",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1‑crd‑spec‑fields",
+      "desc": "Application spec core fields: source, destination, syncPolicy",
+      "text": "step1-crd-spec-fields/text.md",
+      "verify": {
+        "linux": "step1-crd-spec-fields/verify.sh"
+      }
+    },
+    {
+      "name": "step2‑crd‑status‑fields",
+      "desc": "Understand status: syncStatus, healthStatus conditions",
+      "text": "step2-crd-status-fields/text.md",
+      "verify": {
+        "linux": "step2-crd-status-fields/verify.sh"
+      }
+    },
+    {
+      "name": "step3‑tracking‑strategies",
+      "desc": "Three tracking strategies: branch / tag / commit‑hash",
+      "text": "step3-tracking-strategies/text.md",
+      "verify": {
+        "linux": "step3-tracking-strategies/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

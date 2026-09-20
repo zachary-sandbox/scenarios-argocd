@@ -1,0 +1,34 @@
+{
+  "title": "Jenkins Argo‑CD GitOps CI‑CD Integration",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-gitops-ci-cd-separation",
+      "desc": "Separate CI(Jenkins) and CD(Argo‑CD) responsibilities",
+      "text": "step1-gitops-ci-cd-separation/text.md",
+      "verify": {
+        "linux": "step1-gitops-ci-cd-separation/verify.sh"
+      }
+    },
+    {
+      "name": "step2-jenkins-update-git-manifest",
+      "desc": "Jenkins pipeline: build image and update image tag inside Git manifest",
+      "text": "step2-jenkins-update-git-manifest/text.md",
+      "verify": {
+        "linux": "step2-jenkins-update-git-manifest/verify.sh"
+      }
+    },
+    {
+      "name": "step3-argocd-auto-reconcile",
+      "desc": "Argo‑CD detects git commit and perform automatic sync",
+      "text": "step3-argocd-auto-reconcile/text.md",
+      "verify": {
+        "linux": "step3-argocd-auto-reconcile/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

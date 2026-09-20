@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "path": "gitops-concept" },
+    { "path": "argocd-architecture" },
+    { "path": "local-k8s-lab" },
+    { "path": "install-argocd" },
+    { "path": "argocd-cli-ui-login" }
+  ]
+}

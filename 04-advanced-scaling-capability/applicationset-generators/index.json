@@ -1,0 +1,34 @@
+{
+  "title": "ApplicationSet Generators",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-applicationset-concept",
+      "desc": "Understand ApplicationSet CRD and generators",
+      "text": "step1-applicationset-concept/text.md",
+      "verify": {
+        "linux": "step1-applicationset-concept/verify.sh"
+      }
+    },
+    {
+      "name": "step2-list-generator",
+      "desc": "Create ApplicationSet with List generator",
+      "text": "step2-list-generator/text.md",
+      "verify": {
+        "linux": "step2-list-generator/verify.sh"
+      }
+    },
+    {
+      "name": "step3-git-dir-generator",
+      "desc": "Create ApplicationSet with Git directory generator",
+      "text": "step3-git-dir-generator/text.md",
+      "verify": {
+        "linux": "step3-git-dir-generator/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

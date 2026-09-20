@@ -1,0 +1,34 @@
+{
+  "title": "Argo‑CD Notifications Practice",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-notifications-concept",
+      "desc": "Notifications trigger, template, service concept",
+      "text": "step1-notifications-concept/text.md",
+      "verify": {
+        "linux": "step1-notifications-concept/verify.sh"
+      }
+    },
+    {
+      "name": "step2-deploy-notifications-controller",
+      "desc": "Install argo‑notifications controller manifests",
+      "text": "step2-deploy-notifications-controller/text.md",
+      "verify": {
+        "linux": "step2-deploy-notifications-controller/verify.sh"
+      }
+    },
+    {
+      "name": "step3-configure-trigger-template-webhook",
+      "desc": "Configure trigger template and webhook receiver, test notification",
+      "text": "step3-configure-trigger-template-webhook/text.md",
+      "verify": {
+        "linux": "step3-configure-trigger-template-webhook/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

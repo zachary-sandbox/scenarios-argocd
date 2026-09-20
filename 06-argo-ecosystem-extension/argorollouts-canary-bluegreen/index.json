@@ -1,0 +1,34 @@
+{
+  "title": "Argo Rollouts Canary & Blue‑Green Release",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-rollouts-concept",
+      "desc": "Argo Rollouts core concept compare with native Deployment",
+      "text": "step1-rollouts-concept/text.md",
+      "verify": {
+        "linux": "step1-rollouts-concept/verify.sh"
+      }
+    },
+    {
+      "name": "step2-install-argorollouts",
+      "desc": "Install Argo Rollouts controller via official manifest",
+      "text": "step2-install-argorollouts/text.md",
+      "verify": {
+        "linux": "step2-install-argorollouts/verify.sh"
+      }
+    },
+    {
+      "name": "step3-canary-bluegreen-practice",
+      "desc": "Deploy Rollout resource, test canary and blue‑green strategy",
+      "text": "step3-canary-bluegreen-practice/text.md",
+      "verify": {
+        "linux": "step3-canary-bluegreen-practice/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

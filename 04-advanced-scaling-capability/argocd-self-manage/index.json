@@ -1,0 +1,34 @@
+{
+  "title": "Argo CD Self Management",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-self-manage-concept",
+      "desc": "Understand Argo CD self-management concept",
+      "text": "step1-self-manage-concept/text.md",
+      "verify": {
+        "linux": "step1-self-manage-concept/verify.sh"
+      }
+    },
+    {
+      "name": "step2-store-install-manifests-in-git",
+      "desc": "Store Argo CD install manifests in Git",
+      "text": "step2-store-install-manifests-in-git/text.md",
+      "verify": {
+        "linux": "step2-store-install-manifests-in-git/verify.sh"
+      }
+    },
+    {
+      "name": "step3-create-self-manage-app",
+      "desc": "Create Application that manages Argo CD itself",
+      "text": "step3-create-self-manage-app/text.md",
+      "verify": {
+        "linux": "step3-create-self-manage-app/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

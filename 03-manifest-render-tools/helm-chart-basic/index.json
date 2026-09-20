@@ -1,0 +1,34 @@
+{
+  "title": "Helm Chart Basic",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-helm-concepts-for-argocd",
+      "desc": "Understand Helm rendering in Argo CD",
+      "text": "step1-helm-concepts-for-argocd/text.md",
+      "verify": {
+        "linux": "step1-helm-concepts-for-argocd/verify.sh"
+      }
+    },
+    {
+      "name": "step2-create-helm-app-from-git",
+      "desc": "Create Application from Helm chart in Git",
+      "text": "step2-create-helm-app-from-git/text.md",
+      "verify": {
+        "linux": "step2-create-helm-app-from-git/verify.sh"
+      }
+    },
+    {
+      "name": "step3-helm-release-notes",
+      "desc": "Review Helm release behavior and notes",
+      "text": "step3-helm-release-notes/text.md",
+      "verify": {
+        "linux": "step3-helm-release-notes/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

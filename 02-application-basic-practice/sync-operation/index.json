@@ -1,0 +1,34 @@
+{
+  "title": "Manual Sync Operation Hands‑on",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1‑simulate‑outofsync",
+      "desc": "Simulate OutOfSync by manually edit live kubernetes resource",
+      "text": "step1-simulate-outofsync/text.md",
+      "verify": {
+        "linux": "step1-simulate-outofsync/verify.sh"
+      }
+    },
+    {
+      "name": "step2‑ui‑manual‑sync",
+      "desc": "Execute manual sync operation from Argo‑CD Web UI",
+      "text": "step2-ui-manual-sync/text.md",
+      "verify": {
+        "linux": "step2-ui-manual-sync/verify.sh"
+      }
+    },
+    {
+      "name": "step3‑cli‑app‑sync",
+      "desc": "Run argocd app sync command from cli and watch status change",
+      "text": "step3-cli-app-sync/text.md",
+      "verify": {
+        "linux": "step3-cli-app-sync/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

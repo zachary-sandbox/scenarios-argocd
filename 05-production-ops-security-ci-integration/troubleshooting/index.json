@@ -1,0 +1,34 @@
+{
+  "title": "Argo‑CD Troubleshooting Practice",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-debug-repo-server",
+      "desc": "Debug repo‑‑server git repository connection issues",
+      "text": "step1-debug-repo-server/text.md",
+      "verify": {
+        "linux": "step1-debug-repo-server/verify.sh"
+      }
+    },
+    {
+      "name": "step2-debug-outofsync",
+      "desc": "Debug OutOfSync status using UI diff and argocd app‑diff cli",
+      "text": "step2-debug-outofsync/text.md",
+      "verify": {
+        "linux": "step2-debug-outofsync/verify.sh"
+      }
+    },
+    {
+      "name": "step3-collect-component-logs",
+      "desc": "Collect logs from different Argo‑CD components for diagnosis",
+      "text": "step3-collect-component-logs/text.md",
+      "verify": {
+        "linux": "step3-collect-component-logs/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "GitOps Core Concept Understanding",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1-what-is-gitops",
+      "desc": "What is GitOps: Desired State and Live State",
+      "text": "step1-what-is-gitops/text.md",
+      "verify": {
+        "linux": "step1-what-is-gitops/verify.sh",
+        "windows": "step1-what-is-gitops/verify.ps1"
+      }
+    },
+    {
+      "name": "step2-gitops-argocd-diff-traditional",
+      "desc": "GitOps vs traditional imperative kubectl delivery",
+      "text": "step2-gitops-argocd-diff-traditional/text.md",
+      "verify": {
+        "linux": "step2-gitops-argocd-diff-traditional/verify.sh",
+        "windows": "step2-gitops-argocd-diff-traditional/verify.ps1"
+      }
+    }
+  ],
+  "backend": {
+   "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}

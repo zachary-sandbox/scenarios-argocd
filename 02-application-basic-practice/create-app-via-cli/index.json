@@ -1,0 +1,34 @@
+{
+  "title": "Create Application via argocd CLI",
+  "intro": "intro.md",
+  "finish": "finish.md",
+  "steps": [
+    {
+      "name": "step1‑cli‑app‑create‑cmd",
+      "desc": "Create application with argocd app create imperative command",
+      "text": "step1-cli-app-create-cmd/text.md",
+      "verify": {
+        "linux": "step1-cli-app-create-cmd/verify.sh"
+      }
+    },
+    {
+      "name": "step2‑cli‑app‑get‑inspect",
+      "desc": "Inspect application status using argocd app get",
+      "text": "step2-cli-app-get-inspect/text.md",
+      "verify": {
+        "linux": "step2-cli-app-get-inspect/verify.sh"
+      }
+    },
+    {
+      "name": "step3‑declarative‑yaml‑apply",
+      "desc": "Declarative create: kubectl apply Application CR yaml file",
+      "text": "step3-declarative-yaml-apply/text.md",
+      "verify": {
+        "linux": "step3-declarative-yaml-apply/verify.sh"
+      }
+    }
+  ],
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1nodes"
+  }
+}
