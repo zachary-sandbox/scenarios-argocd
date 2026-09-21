@@ -1,33 +1,31 @@
 {
   "title": "Kustomize Overlay Practice",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-kustomize-base-and-overlay",
-      "desc": "Understand base and overlay structure",
-      "text": "step1-kustomize-base-and-overlay/text.md",
-      "verify": {
-        "linux": "step1-kustomize-base-and-overlay/verify.sh"
+  "description": "Learn kustomize base‑overlay pattern, image override and patch resources",
+  "details": {
+    "steps": [
+      {
+        "title": "Understand base and overlay directory layout",
+        "text": "step1-kustomize-base-and-overlay/text.md"
+      },
+      {
+        "title": "Create Application pointing to kustomize overlay",
+        "text": "step2-create-kustomize-app/text.md"
+      },
+      {
+        "title": "Practice image override and resource patches",
+        "text": "step3-image-and-patch-override/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-create-kustomize-app",
-      "desc": "Create Argo CD Application pointing to Kustomize overlay",
-      "text": "step2-create-kustomize-app/text.md",
-      "verify": {
-        "linux": "step2-create-kustomize-app/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-image-and-patch-override",
-      "desc": "Practice image override and patches",
-      "text": "step3-image-and-patch-override/text.md",
-      "verify": {
-        "linux": "step3-image-and-patch-override/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

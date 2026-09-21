@@ -1,33 +1,31 @@
 {
   "title": "Create Application via argocd CLI",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1‑cli‑app‑create‑cmd",
-      "desc": "Create application with argocd app create imperative command",
-      "text": "step1-cli-app-create-cmd/text.md",
-      "verify": {
-        "linux": "step1-cli-app-create-cmd/verify.sh"
+  "description": "Imperative create by argocd app create and declarative kubectl apply yaml",
+  "details": {
+    "steps": [
+      {
+        "title": "Imperative create with argocd app create",
+        "text": "step1-cli-app-create-cmd/text.md"
+      },
+      {
+        "title": "Inspect status by argocd app get",
+        "text": "step2-cli-app-get-inspect/text.md"
+      },
+      {
+        "title": "Declarative create by kubectl apply Application yaml",
+        "text": "step3-declarative-yaml-apply/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2‑cli‑app‑get‑inspect",
-      "desc": "Inspect application status using argocd app get",
-      "text": "step2-cli-app-get-inspect/text.md",
-      "verify": {
-        "linux": "step2-cli-app-get-inspect/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3‑declarative‑yaml‑apply",
-      "desc": "Declarative create: kubectl apply Application CR yaml file",
-      "text": "step3-declarative-yaml-apply/text.md",
-      "verify": {
-        "linux": "step3-declarative-yaml-apply/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

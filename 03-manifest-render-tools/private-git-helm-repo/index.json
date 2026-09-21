@@ -1,33 +1,31 @@
 {
   "title": "Private Git and Helm Repositories",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-private-git-repo-creds",
-      "desc": "Configure credentials for private Git repository",
-      "text": "step1-private-git-repo-creds/text.md",
-      "verify": {
-        "linux": "step1-private-git-repo-creds/verify.sh"
+  "description": "Configure credentials for private git and private helm repository in Argo‑CD",
+  "details": {
+    "steps": [
+      {
+        "title": "Add credentials for private git repository",
+        "text": "step1-private-git-repo-creds/text.md"
+      },
+      {
+        "title": "Register private helm repository",
+        "text": "step2-private-helm-repo/text.md"
+      },
+      {
+        "title": "Create application from private source and verify sync",
+        "text": "step3-app-from-private-source/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-private-helm-repo",
-      "desc": "Configure private Helm repository in Argo CD",
-      "text": "step2-private-helm-repo/text.md",
-      "verify": {
-        "linux": "step2-private-helm-repo/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-app-from-private-source",
-      "desc": "Create Application from private source and verify sync",
-      "text": "step3-app-from-private-source/text.md",
-      "verify": {
-        "linux": "step3-app-from-private-source/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

@@ -1,33 +1,31 @@
 {
   "title": "Resource Prune and Ignore",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-prune-behavior",
-      "desc": "Understand prune behavior",
-      "text": "step1-prune-behavior/text.md",
-      "verify": {
-        "linux": "step1-prune-behavior/verify.sh"
+  "description": "Study prune behaviour, IgnoreExtraneous annotation and global resource exclusions",
+  "details": {
+    "steps": [
+      {
+        "title": "Understand prune behaviour and risks",
+        "text": "step1-prune-behavior/text.md"
+      },
+      {
+        "title": "Use compare‑options IgnoreExtraneous annotation",
+        "text": "step2-compare-options-ignore/text.md"
+      },
+      {
+        "title": "Configure global resource exclusions in argocd‑cm",
+        "text": "step3-global-resource-exclusions/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-compare-options-ignore",
-      "desc": "Use compare-options to ignore resources",
-      "text": "step2-compare-options-ignore/text.md",
-      "verify": {
-        "linux": "step2-compare-options-ignore/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-global-resource-exclusions",
-      "desc": "Configure global resource exclusions",
-      "text": "step3-global-resource-exclusions/text.md",
-      "verify": {
-        "linux": "step3-global-resource-exclusions/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

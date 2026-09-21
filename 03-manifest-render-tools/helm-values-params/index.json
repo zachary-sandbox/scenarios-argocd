@@ -1,33 +1,31 @@
 {
   "title": "Helm Values and Parameters",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-values-yaml-basic",
-      "desc": "Use values.yaml to customize Helm chart",
-      "text": "step1-values-yaml-basic/text.md",
-      "verify": {
-        "linux": "step1-values-yaml-basic/verify.sh"
+  "description": "Use values.yaml, application helm parameters and multi‑values‑files for environment separation",
+  "details": {
+    "steps": [
+      {
+        "title": "Customize chart with values.yaml",
+        "text": "step1-values-yaml-basic/text.md"
+      },
+      {
+        "title": "Override helm parameters inside Argo‑CD Application",
+        "text": "step2-helm-parameters-in-argocd/text.md"
+      },
+      {
+        "title": "Work with multiple values files",
+        "text": "step3-multi-values-files/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-helm-parameters-in-argocd",
-      "desc": "Override Helm parameters in Argo CD Application",
-      "text": "step2-helm-parameters-in-argocd/text.md",
-      "verify": {
-        "linux": "step2-helm-parameters-in-argocd/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-multi-values-files",
-      "desc": "Use multiple values files for environment separation",
-      "text": "step3-multi-values-files/text.md",
-      "verify": {
-        "linux": "step3-multi-values-files/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

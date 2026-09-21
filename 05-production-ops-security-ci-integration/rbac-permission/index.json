@@ -1,33 +1,31 @@
 {
   "title": "Argo‑CD RBAC Permission Practice",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-rbac-basic-concept",
-      "desc": "RBAC basic concept and policy syntax",
-      "text": "step1-rbac-basic-concept/text.md",
-      "verify": {
-        "linux": "step1-rbac-basic-concept/verify.sh"
+  "description": "Understand Argo‑CD RBAC model, configure custom policy and validate user permissions",
+  "details": {
+    "steps": [
+      {
+        "title": "RBAC basic concept and policy syntax",
+        "text": "step1-rbac-basic-concept/text.md"
+      },
+      {
+        "title": "Add custom RBAC policy inside argocd‑cm ConfigMap",
+        "text": "step2-configure-rbac-policy/text.md"
+      },
+      {
+        "title": "Validate read‑only and restricted application permission",
+        "text": "step3-validate-permission/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-configure-rbac-policy",
-      "desc": "Add custom RBAC policy inside argocd‑cm ConfigMap",
-      "text": "step2-configure-rbac-policy/text.md",
-      "verify": {
-        "linux": "step2-configure-rbac-policy/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-validate-permission",
-      "desc": "Validate read‑only and restricted application permission",
-      "text": "step3-validate-permission/text.md",
-      "verify": {
-        "linux": "step3-validate-permission/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

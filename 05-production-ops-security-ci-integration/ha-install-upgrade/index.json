@@ -1,33 +1,31 @@
 {
   "title": "HA Deployment and Version Upgrade",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-ha-architecture",
-      "desc": "Argo‑CD HA architecture and replica settings",
-      "text": "step1-ha-architecture/text.md",
-      "verify": {
-        "linux": "step1-ha-architecture/verify.sh"
+  "description": "Study Argo‑CD high‑availability architecture, scale replicas and official upgrade workflow",
+  "details": {
+    "steps": [
+      {
+        "title": "Argo‑CD HA architecture and replica settings",
+        "text": "step1-ha-architecture/text.md"
+      },
+      {
+        "title": "Scale deployment replicas to enable HA mode",
+        "text": "step2-modify-to-ha/text.md"
+      },
+      {
+        "title": "Follow official document to perform Argo‑CD version upgrade",
+        "text": "step3-official-upgrade-procedure/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-modify-to-ha",
-      "desc": "Scale deployment replicas to enable HA mode",
-      "text": "step2-modify-to-ha/text.md",
-      "verify": {
-        "linux": "step2-modify-to-ha/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-official-upgrade-procedure",
-      "desc": "Follow official document to perform Argo‑CD version upgrade",
-      "text": "step3-official-upgrade-procedure/text.md",
-      "verify": {
-        "linux": "step3-official-upgrade-procedure/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

@@ -1,33 +1,31 @@
 {
   "title": "ApplicationSet Generators",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-applicationset-concept",
-      "desc": "Understand ApplicationSet CRD and generators",
-      "text": "step1-applicationset-concept/text.md",
-      "verify": {
-        "linux": "step1-applicationset-concept/verify.sh"
+  "description": "Learn ApplicationSet CR, List generator and Git directory generator for batch Application creation",
+  "details": {
+    "steps": [
+      {
+        "title": "ApplicationSet core concept",
+        "text": "step1-applicationset-concept/text.md"
+      },
+      {
+        "title": "Practice List generator",
+        "text": "step2-list-generator/text.md"
+      },
+      {
+        "title": "Practice Git directory generator",
+        "text": "step3-git-dir-generator/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-list-generator",
-      "desc": "Create ApplicationSet with List generator",
-      "text": "step2-list-generator/text.md",
-      "verify": {
-        "linux": "step2-list-generator/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-git-dir-generator",
-      "desc": "Create ApplicationSet with Git directory generator",
-      "text": "step3-git-dir-generator/text.md",
-      "verify": {
-        "linux": "step3-git-dir-generator/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

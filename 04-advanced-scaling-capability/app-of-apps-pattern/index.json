@@ -1,33 +1,31 @@
 {
-  "title": "App-of-Apps Pattern",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-pattern-concept",
-      "desc": "Understand App-of-Apps concept",
-      "text": "step1-pattern-concept/text.md",
-      "verify": {
-        "linux": "step1-pattern-concept/verify.sh"
+  "title": "App‑of‑Apps Pattern",
+  "description": "Understand and practice App‑of‑Apps pattern for declarative multi‑application bootstrapping",
+  "details": {
+    "steps": [
+      {
+        "title": "Understand App‑of‑Apps concept",
+        "text": "step1-pattern-concept/text.md"
+      },
+      {
+        "title": "Create parent Application resource",
+        "text": "step2-create-parent-app/text.md"
+      },
+      {
+        "title": "Add child Application CR inside Git repository",
+        "text": "step3-add-child-app-in-git/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-create-parent-app",
-      "desc": "Create parent Application that manages child Application CRs",
-      "text": "step2-create-parent-app/text.md",
-      "verify": {
-        "linux": "step2-create-parent-app/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-add-child-app-in-git",
-      "desc": "Add child Application CR in Git and observe auto creation",
-      "text": "step3-add-child-app-in-git/text.md",
-      "verify": {
-        "linux": "step3-add-child-app-in-git/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

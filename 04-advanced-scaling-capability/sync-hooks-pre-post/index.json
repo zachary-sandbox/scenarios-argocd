@@ -1,33 +1,31 @@
 {
   "title": "Sync Hooks Practice",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-hook-concepts",
-      "desc": "Understand PreSync, Sync, PostSync hooks",
-      "text": "step1-hook-concepts/text.md",
-      "verify": {
-        "linux": "step1-hook-concepts/verify.sh"
+  "description": "Work with PreSync / Sync / PostSync resource hooks, observe hook execution sequence",
+  "details": {
+    "steps": [
+      {
+        "title": "Sync hook concept and annotations",
+        "text": "step1-hook-concepts/text.md"
+      },
+      {
+        "title": "Create hook Job resource with hook annotations",
+        "text": "step2-create-hook-job/text.md"
+      },
+      {
+        "title": "Trigger sync and observe hook execution & failure behaviour",
+        "text": "step3-observe-hook-execution/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-create-hook-job",
-      "desc": "Create hook Job with annotation",
-      "text": "step2-create-hook-job/text.md",
-      "verify": {
-        "linux": "step2-create-hook-job/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-observe-hook-execution",
-      "desc": "Observe hook execution order and failure behavior",
-      "text": "step3-observe-hook-execution/text.md",
-      "verify": {
-        "linux": "step3-observe-hook-execution/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

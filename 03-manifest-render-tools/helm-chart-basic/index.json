@@ -1,33 +1,31 @@
 {
   "title": "Helm Chart Basic",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-helm-concepts-for-argocd",
-      "desc": "Understand Helm rendering in Argo CD",
-      "text": "step1-helm-concepts-for-argocd/text.md",
-      "verify": {
-        "linux": "step1-helm-concepts-for-argocd/verify.sh"
+  "description": "Understand Argo‑CD helm rendering without tiller, deploy chart stored in git",
+  "details": {
+    "steps": [
+      {
+        "title": "Helm rendering concept inside Argo‑CD",
+        "text": "step1-helm-concepts-for-argocd/text.md"
+      },
+      {
+        "title": "Create Application from helm chart in git",
+        "text": "step2-create-helm-app-from-git/text.md"
+      },
+      {
+        "title": "Inspect helm release output and notes",
+        "text": "step3-helm-release-notes/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-create-helm-app-from-git",
-      "desc": "Create Application from Helm chart in Git",
-      "text": "step2-create-helm-app-from-git/text.md",
-      "verify": {
-        "linux": "step2-create-helm-app-from-git/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-helm-release-notes",
-      "desc": "Review Helm release behavior and notes",
-      "text": "step3-helm-release-notes/text.md",
-      "verify": {
-        "linux": "step3-helm-release-notes/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

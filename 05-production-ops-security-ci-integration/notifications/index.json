@@ -1,33 +1,31 @@
 {
   "title": "Argo‑CD Notifications Practice",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-notifications-concept",
-      "desc": "Notifications trigger, template, service concept",
-      "text": "step1-notifications-concept/text.md",
-      "verify": {
-        "linux": "step1-notifications-concept/verify.sh"
+  "description": "Deploy notifications controller, configure trigger, template and webhook notification receiver",
+  "details": {
+    "steps": [
+      {
+        "title": "Notifications trigger, template, service concept",
+        "text": "step1-notifications-concept/text.md"
+      },
+      {
+        "title": "Install argo‑notifications controller manifests",
+        "text": "step2-deploy-notifications-controller/text.md"
+      },
+      {
+        "title": "Configure trigger template and webhook receiver, test notification",
+        "text": "step3-configure-trigger-template-webhook/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-deploy-notifications-controller",
-      "desc": "Install argo‑notifications controller manifests",
-      "text": "step2-deploy-notifications-controller/text.md",
-      "verify": {
-        "linux": "step2-deploy-notifications-controller/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-configure-trigger-template-webhook",
-      "desc": "Configure trigger template and webhook receiver, test notification",
-      "text": "step3-configure-trigger-template-webhook/text.md",
-      "verify": {
-        "linux": "step3-configure-trigger-template-webhook/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

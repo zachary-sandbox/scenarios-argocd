@@ -1,33 +1,31 @@
 {
   "title": "Plain YAML Manifest Source",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-create-plain-yaml-app",
-      "desc": "Create an Application that points to a plain YAML Git directory",
-      "text": "step1-create-plain-yaml-app/text.md",
-      "verify": {
-        "linux": "step1-create-plain-yaml-app/verify.sh"
+  "description": "Use plain YAML directory as Argo‑CD application source, test add/update/delete manifests in git",
+  "details": {
+    "steps": [
+      {
+        "title": "Create Application pointing to plain YAML git directory",
+        "text": "step1-create-plain-yaml-app/text.md"
+      },
+      {
+        "title": "Modify YAML file in git repository",
+        "text": "step2-modify-yaml-in-git/text.md"
+      },
+      {
+        "title": "Delete YAML and verify prune effect",
+        "text": "step3-delete-yaml-and-prune/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-modify-yaml-in-git",
-      "desc": "Modify a YAML file in Git and observe OutOfSync / Sync behavior",
-      "text": "step2-modify-yaml-in-git/text.md",
-      "verify": {
-        "linux": "step2-modify-yaml-in-git/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-delete-yaml-and-prune",
-      "desc": "Delete a YAML file from Git and verify prune behavior",
-      "text": "step3-delete-yaml-and-prune/text.md",
-      "verify": {
-        "linux": "step3-delete-yaml-and-prune/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

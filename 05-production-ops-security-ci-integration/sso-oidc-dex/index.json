@@ -1,33 +1,31 @@
 {
   "title": "SSO OIDC Integration with Dex",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-dex-oidc-concept",
-      "desc": "Dex as identity broker concept",
-      "text": "step1-dex-oidc-concept/text.md",
-      "verify": {
-        "linux": "step1-dex-oidc-concept/verify.sh"
+  "description": "Configure Dex identity broker, OIDC connector and test SSO login with RBAC group mapping",
+  "details": {
+    "steps": [
+      {
+        "title": "Dex as identity broker concept",
+        "text": "step1-dex-oidc-concept/text.md"
+      },
+      {
+        "title": "Modify argocd‑dex‑config configmap add OIDC connector",
+        "text": "step2-configure-dex-connector/text.md"
+      },
+      {
+        "title": "Test SSO login and RBAC group mapping",
+        "text": "step3-test-sso-login-flow/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-configure-dex-connector",
-      "desc": "Modify argocd‑dex‑config configmap add OIDC connector",
-      "text": "step2-configure-dex-connector/text.md",
-      "verify": {
-        "linux": "step2-configure-dex-connector/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-test-sso-login-flow",
-      "desc": "Test SSO login and RBAC group mapping",
-      "text": "step3-test-sso-login-flow/text.md",
-      "verify": {
-        "linux": "step3-test-sso-login-flow/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

@@ -1,33 +1,31 @@
 {
   "title": "Argo‑CD Prometheus Metrics",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-metrics-concept",
-      "desc": "Argo‑CD prometheus metrics overview",
-      "text": "step1-metrics-concept/text.md",
-      "verify": {
-        "linux": "step1-metrics-concept/verify.sh"
+  "description": "Examine built‑in prometheus metrics endpoints, fetch and understand key application metrics",
+  "details": {
+    "steps": [
+      {
+        "title": "Argo‑CD prometheus metrics overview",
+        "text": "step1-metrics-concept/text.md"
+      },
+      {
+        "title": "Enable metrics in argocd‑cm configmap",
+        "text": "step2-enable-metrics/text.md"
+      },
+      {
+        "title": "Port‑forward service and fetch /metrics raw data",
+        "text": "step3-access-metrics-endpoint/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-enable-metrics",
-      "desc": "Enable metrics in argocd‑cm configmap",
-      "text": "step2-enable-metrics/text.md",
-      "verify": {
-        "linux": "step2-enable-metrics/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-access-metrics-endpoint",
-      "desc": "Port‑forward service and fetch /metrics raw data",
-      "text": "step3-access-metrics-endpoint/text.md",
-      "verify": {
-        "linux": "step3-access-metrics-endpoint/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }

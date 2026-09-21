@@ -1,33 +1,31 @@
 {
   "title": "Argo‑CD Troubleshooting Practice",
-  "intro": "intro.md",
-  "finish": "finish.md",
-  "steps": [
-    {
-      "name": "step1-debug-repo-server",
-      "desc": "Debug repo‑‑server git repository connection issues",
-      "text": "step1-debug-repo-server/text.md",
-      "verify": {
-        "linux": "step1-debug-repo-server/verify.sh"
+  "description": "Debug repo‑server issues, OutOfSync diff, collect component logs for diagnosis",
+  "details": {
+    "steps": [
+      {
+        "title": "Debug repo‑server git repository connection issues",
+        "text": "step1-debug-repo-server/text.md"
+      },
+      {
+        "title": "Debug OutOfSync status using UI diff and argocd app‑diff cli",
+        "text": "step2-debug-outofsync/text.md"
+      },
+      {
+        "title": "Collect logs from different Argo‑CD components for diagnosis",
+        "text": "step3-collect-component-logs/text.md"
       }
+    ],
+    "finish": {
+      "text": "finish.md"
     },
-    {
-      "name": "step2-debug-outofsync",
-      "desc": "Debug OutOfSync status using UI diff and argocd app‑diff cli",
-      "text": "step2-debug-outofsync/text.md",
-      "verify": {
-        "linux": "step2-debug-outofsync/verify.sh"
-      }
+    "intro": {
+      "text": "intro.md"
     },
-    {
-      "name": "step3-collect-component-logs",
-      "desc": "Collect logs from different Argo‑CD components for diagnosis",
-      "text": "step3-collect-component-logs/text.md",
-      "verify": {
-        "linux": "step3-collect-component-logs/verify.sh"
-      }
+    "assets": {
+      "host01": []
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }
