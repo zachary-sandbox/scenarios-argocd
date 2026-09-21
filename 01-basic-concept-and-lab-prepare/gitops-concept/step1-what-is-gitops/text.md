@@ -11,6 +11,13 @@
    - Detect differences; any mismatch will mark Application resource as `OutOfSync` status
    - Depending on `syncPolicy`, Argo‑CD may automatically execute sync to converge live state toward desired state in Git
 
+
+[click here]({{TRAFFIC_HOST_30080}})
+
+[click here]({{TRAFFIC_HOST1_30080}})
+
+[click here]({{TRAFFIC_HOST2_30080}})
+
 🖼️ Conceptual architecture diagram：Argo‑CD GitOps Workflow
 
 ![mermaid-diagram-2026-09-21-134902.png](../asserts/mermaid-diagram-2026-09-21-134902.png)
