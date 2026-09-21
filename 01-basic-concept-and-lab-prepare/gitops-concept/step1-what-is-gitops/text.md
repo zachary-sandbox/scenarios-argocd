@@ -45,7 +45,8 @@ Two different delivery modes for Kubernetes, below are independent flowcharts fo
 
 ### 1. Does `OutOfSync` always indicate cluster failure? What are some harmless scenarios for OutOfSync?
 
-<details><summary>Answer</summary>
+<details>
+<summary>Answer</summary>
 
 `OutOfSync` **does NOT always mean cluster failure**. This status only tells there is a difference between the desired state stored in Git and the live running state inside Kubernetes. The cluster workload can still be healthy and working normally.
 
@@ -59,11 +60,10 @@ Only when the difference breaks application functionality does OutOfSync become 
 
 </details>
 
----
-
 ### 2. What exactly happens inside Argo‑CD when you trigger a Sync operation? List the main steps.
 
-<details><summary>Answer</summary>
+<details>
+<summary>Answer</summary>
 
 When you manually or automatically trigger Sync, the main internal workflow:
 1. **Repo‑Server fetches & renders manifests**: Repo‑server pulls the target Git revision, renders Helm / Kustomize / plain‑yaml and outputs final Kubernetes manifests (desired state).
@@ -78,11 +78,11 @@ When you manually or automatically trigger Sync, the main internal workflow:
 If any hook fails, the sync may abort according to hook failure policy.
 
 </details>
----
 
 ### 3. Why do we emphasize Git as single‑source‑of‑truth in GitOps practice? What risks will appear if we ignore this principle?
 
-<details><summary>Answer</summary>
+<details>
+<summary>Answer</summary>
 
 #### Reasons for single‑source‑of‑truth
 1. **Version tracking**: Git keeps complete commit history for every configuration change, providing audit trail for who‑when‑what was modified.
@@ -99,8 +99,5 @@ If any hook fails, the sync may abort according to hook failure policy.
 5. Argo‑CD automated sync will overwrite manual out‑of‑Git changes unexpectedly, causing accidental loss of manual edits.
 
 </details>
----
 
 Reference document: [https://argo-cd.readthedocs.io/en/stable/](https://argo-cd.readthedocs.io/en/stable/)
-
----

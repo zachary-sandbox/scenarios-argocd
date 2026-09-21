@@ -56,7 +56,6 @@ Kubernetes 的两种不同交付模式，下面为两套独立流程图进行对
 
 只有当差异本身破坏业务功能时，OutOfSync才是真正故障。
 </details>
----
 
 ### 2. 当触发Sync（同步）操作时，Argo‑CD内部会发生什么？列出主要步骤。
 
@@ -75,7 +74,6 @@ Kubernetes 的两种不同交付模式，下面为两套独立流程图进行对
 如果任意钩子执行失败，根据钩子失败策略，同步流程可能会中止。
 
 </details>
----
 
 ### 3. GitOps实践中为什么反复强调Git作为唯一可信源？违背该原则会带来哪些风险？
 
@@ -97,6 +95,5 @@ Kubernetes 的两种不同交付模式，下面为两套独立流程图进行对
 5. 如果开启Argo‑CD自动同步，会意外覆盖集群上不在Git管控内的手动修改，造成配置丢失。
 
 </details>
----
 
 ## 参考文档：[https://argo‑cd.readthedocs.io/en/stable/](https://argo-cd.readthedocs.io/en/stable/)

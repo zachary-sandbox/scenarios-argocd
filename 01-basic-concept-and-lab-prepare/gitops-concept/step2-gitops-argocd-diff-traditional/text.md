@@ -8,7 +8,6 @@ The CI job holds `kubeconfig` credentials which grant full access to target Kube
 >
 > **Drawbacks**
 >
->
 > - Change history is **NOT persisted in Git**. Deployment changes are only recorded in CI job logs instead of version‑controlled Git repository.
 > - Ad‑hoc manual edits inside cluster cannot be tracked. Operators run `kubectl edit` to hot‑fix issues; those runtime modifications exist only inside cluster with no Git record.
 > - Rollback process is error‑prone. To rollback you need to re‑run an old CI job; you cannot guarantee exactly the same manifest will be reapplied.
@@ -25,7 +24,6 @@ The CI job holds `kubeconfig` credentials which grant full access to target Kube
 >
 > **Core advantages summary**
 >
->
 > - Git becomes single source‑of‑truth for all Kubernetes desired‑state manifests.
 > - No cluster credentials stored within CI pipeline, reducing attack surface.
 > - Rollback is simple: revert a Git commit; Argo‑CD will reconcile automatically.
@@ -35,7 +33,8 @@ The CI job holds `kubeconfig` credentials which grant full access to target Kube
 
 ### 1. What are benefits when CI pipeline never directly touches Kubernetes API?
 
-<details><summary>Answer</summary>
+<details>
+<summary>Answer</summary>
 
 1. **Security improvement**: CI agents / runners do not need kubeconfig credentials for Kubernetes. Even if CI pipeline or runner is compromised, attackers cannot gain access to modify the Kubernetes cluster. This greatly reduces security attack surface.
 2. **Clear separation of duties**: CI is responsible for building artifacts (compile code, build & push images). CD responsibility belongs exclusively to Argo‑CD running inside the cluster. CI and CD concerns are decoupled.
@@ -45,11 +44,10 @@ The CI job holds `kubeconfig` credentials which grant full access to target Kube
 
 </details>
 
----
-
 ### 2. If user manually edits resources inside cluster, what will Argo‑CD do with self‑heal enabled?
 
-<details><summary>Answer</summary>
+<details>
+<summary>Answer</summary>
 
 When `selfHeal: true` is set in `syncPolicy`:
 1. Argo‑CD reconciliation loop detects drift: live cluster resource has diverged from desired state defined in Git repository, marks Application status as `OutOfSync`.
@@ -59,6 +57,5 @@ When `selfHeal: true` is set in `syncPolicy`:
 > Note: If self‑heal is disabled (`selfHeal: false`), Argo‑CD will still report `OutOfSync` status, but will NOT automatically revert manual cluster modifications. Operator needs to trigger sync manually to restore Git‑defined desired state.
 
 </details>
----
 
 Reference document: [https://argo‑cd.readthedocs.io/en/stable/user-guide/gitops/](https://argo-cd.readthedocs.io/en/stable/user-guide/gitops/)
