@@ -29,8 +29,7 @@
     "assets": {
       "host01": [
         {"file": "install.yaml", "target": "/tmp", "chmod": "+w"},
-        {"file": "run.sh", "target": "/my/location", "chmod": "+x"},
-        {"file": "**/*.*", "target": "/all"}
+        {"file": "install_argocd.sh", "target": "/tmp", "chmod": "+x"}
       ]
     }
   },
