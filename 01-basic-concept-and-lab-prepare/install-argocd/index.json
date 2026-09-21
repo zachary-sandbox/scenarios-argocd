@@ -27,7 +27,11 @@
       "text": "intro.md"
     },
     "assets": {
-      "host01": []
+      "host01": [
+        {"file": "install.yaml", "target": "/tmp", "chmod": "+w"},
+        {"file": "run.sh", "target": "/my/location", "chmod": "+x"},
+        {"file": "**/*.*", "target": "/all"}
+      ]
     }
   },
   "backend": {
