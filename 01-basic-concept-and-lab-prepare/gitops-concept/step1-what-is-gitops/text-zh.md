@@ -12,7 +12,7 @@
    - 根据 `syncPolicy`（同步策略）配置，Argo‑CD 可以自动执行同步，让集群实际状态向 Git 期望状态收敛
 
 🖼️ 概念架构图：Argo‑CD GitOps 工作流
-![mermaid‑diagram‑2026‑09‑21‑134902.png](../asserts/mermaid-diagram-2026-09-21-134902.png)
+![mermaid‑diagram‑2026‑09‑21‑134902.png](../assets/mermaid-diagram-2026-09-21-134902.png)
 
 ## GitOps vs 传统命令式CI/CD
 
@@ -22,13 +22,13 @@ Kubernetes 的两种不同交付模式，下面为两套独立流程图进行对
 
 >
 > 特点：CI流水线持有 kubeconfig 凭证，直接操作 Kubernetes 集群。Git 仅存储业务源代码，**不作为Kubernetes资源清单的唯一可信源**。
-> ![mermaid‑diagram‑2026‑09‑21‑134429.png](../asserts/mermaid-diagram-2026-09-21-134429.png)
+> ![mermaid‑diagram‑2026‑09‑21‑134429.png](../assets/mermaid-diagram-2026-09-21-134429.png)
 
 ### 📊 流程图2：GitOps工作流（Argo‑CD）
 
 >
 > 特点：CI仅负责构建制品。**Git存放Kubernetes期望状态清单**。由集群内部的Argo‑CD完成清单下发应用。CI流水线**不持有kubeconfig凭证**。
-> ![mermaid‑diagram‑2026‑09‑21‑135000.png](../asserts/mermaid-diagram-2026-09-21-135000.png)
+> ![mermaid‑diagram‑2026‑09‑21‑135000.png](../assets/mermaid-diagram-2026-09-21-135000.png)
 
 ## 关键对比表：GitOps VS 传统CI/CD
 

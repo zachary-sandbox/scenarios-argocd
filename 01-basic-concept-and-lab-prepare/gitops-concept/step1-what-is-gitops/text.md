@@ -13,7 +13,7 @@
 
 🖼️ Conceptual architecture diagram：Argo‑CD GitOps Workflow
 
-![mermaid-diagram-2026-09-21-134902.png](../asserts/mermaid-diagram-2026-09-21-134902.png)
+![mermaid-diagram-2026-09-21-134902.png](../assets/mermaid-diagram-2026-09-21-134902.png)
 
 
 ## GitOps VS Traditional Imperative CI/CD
@@ -24,13 +24,13 @@ Two different delivery modes for Kubernetes, below are independent flowcharts fo
 
 > Feature：CI pipeline holds kubeconfig credential, directly operates Kubernetes cluster. Git only stores source code, **not the single source‑of‑truth for Kubernetes manifests**.
 
-![mermaid-diagram-2026-09-21-134429.png](../asserts/mermaid-diagram-2026-09-21-134429.png)
+![mermaid-diagram-2026-09-21-134429.png](../assets/mermaid-diagram-2026-09-21-134429.png)
 
 ### 📊 Flowchart 2：GitOps Workflow (Argo‑CD)
 
 > Feature：CI only builds artifacts. **Git stores Kubernetes desired‑state manifests**. Argo‑CD inside cluster completes manifest applying. CI does **NOT hold kubeconfig credentials**.
 
-![mermaid-diagram-2026-09-21-135000.png](../asserts/mermaid-diagram-2026-09-21-135000.png)
+![mermaid-diagram-2026-09-21-135000.png](../assets/mermaid-diagram-2026-09-21-135000.png)
 
 ## Key Comparison Table：GitOps VS Traditional CI/CD
 
