@@ -24400,12 +24400,12 @@ spec:
   type: NodePort
   ports:
   - name: http
-    nodePort: 32073
+    nodePort: 30080
     port: 80
     protocol: TCP
     targetPort: 8080
   - name: https
-    nodePort: 30164
+    nodePort: 30443
     port: 443
     protocol: TCP
     targetPort: 8080

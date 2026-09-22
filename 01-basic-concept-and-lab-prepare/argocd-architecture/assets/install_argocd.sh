@@ -30,9 +30,9 @@ ARGOCD_URL=$(cat /etc/killercoda/host | sed 's/PORT/30080/')
 echo "${ADMIN_PWD}" > ./argocd_admin_password.txt
 echo -e "\nPassword also saved to local file: ./argocd_admin_password.txt"
 
-echo -e "\n===== Step5 Start background port‑forward for Argo‑CD UI ====="
-kubectl port-forward svc/argocd-server -n argocd 30080:80 >/dev/null 2>&1 &
-PF_PID=$!
+echo -e "\n===== Step5 Login Argo‑CD UI ====="
+#kubectl port-forward svc/argocd-server -n argocd 30080:80 >/dev/null 2>&1 &
+#PF_PID=$!
 
 echo "ArgoCD Namespace: argocd"
 echo "Argo‑CD Web UI URL: ${ARGOCD_URL}"
