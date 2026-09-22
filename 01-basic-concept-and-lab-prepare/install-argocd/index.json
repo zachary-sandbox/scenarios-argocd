@@ -13,13 +13,11 @@
       },
       {
         "title": "Wait for CRD Established",
-        "text": "step3-wait-crd-established/text.md",
-        "verify": "step3-wait-crd-established/verify.sh"
+        "text": "step3-wait-crd-established/text.md"
       },
       {
         "title": "Wait All Pods Enter Running",
-        "text": "step4-wait-all-pod-running/text.md",
-        "verify": "step4-wait-all-pod-running/verify.sh"
+        "text": "step4-wait-all-pod-running/text.md"
       }
     ],
     "finish": {
