@@ -21,10 +21,13 @@
     },
     "intro": {
       "text": "intro/intro.md",
-      "foreground": "intro/foreground.sh"
+      "foreground": "assets/install_argocd.sh"
     },
     "assets": {
-      "host01": []
+      "host01": [
+        {"file": "install.yaml", "target": "/tmp", "chmod": "+w"},
+        {"file": "install_argocd.sh", "target": "/tmp", "chmod": "+x"}
+      ]
     }
   },
   "backend": {
