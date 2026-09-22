@@ -9,15 +9,17 @@
       },
       {
         "title": "Apply Official Install Manifest",
-        "text": "step2-apply-official-manifests/text.md"
+        "text": "step2-apply-manifests/text.md"
       },
       {
         "title": "Wait for CRD Established",
-        "text": "step3-wait-crd-established/text.md"
+        "text": "step3-wait-crd-established/text.md",
+        "verify": "step3-wait-crd-established/verify.md"
       },
       {
         "title": "Wait All Pods Enter Running",
-        "text": "step4-wait-all-pod-running/text.md"
+        "text": "step4-wait-all-pod-running/text.md",
+        "verify": "step4-wait-all-pod-running/verify.sh"
       }
     ],
     "finish": {
