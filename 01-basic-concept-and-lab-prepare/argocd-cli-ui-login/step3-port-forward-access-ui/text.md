@@ -1,4 +1,10 @@
 # Step3 Port-forward for Web-UI local access
+
+Check the argocd pod status `Running`.
+```bash
+kubectl get pod -n argocd
+```
+
 Run port-forward command in separate terminal window:
 ```bash
 kubectl port-forward svc/argocd-server -n argocd 30080:80

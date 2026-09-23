@@ -26,7 +26,7 @@ argocd login 127.0.0.1:30443 --username admin --password $(cat argocd_admin_pass
 argocd login 10.105.97.185:80 --username admin --password $(cat argocd_admin_password.txt) --plaintext --grpc-web
 
 # localhost https port test
-argocd login 127.0.0.1:443 --username admin --password $(cat argocd_admin_password.txt) --plaintext --grpc-web
+argocd login 10.105.97.185:443 --username admin --password $(cat argocd_admin_password.txt) --plaintext --grpc-web
 ```
 
 After login complete, run:
