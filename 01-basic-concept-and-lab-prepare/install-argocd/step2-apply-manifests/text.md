@@ -7,7 +7,7 @@ Run install command:
 kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/zachary-sandbox/cdn/stable/argoproj/argo-cd/manifests/install.yaml
 ```
 
-or you can apply official manifest. Maybe you need to fix network security issues due to the latest release, and it will be covered in subsequent courses.
+Or you can apply official manifest. Maybe you need to fix network security issues due to the latest release, and it will be covered in subsequent courses.
 
 ```bash
 kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml

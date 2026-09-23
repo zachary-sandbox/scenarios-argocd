@@ -6,4 +6,5 @@
 4. Complete argocd cli login and validate connectivity with argocd version
 
 📖 Reference: https://argo-cd.readthedocs.io/en/stable/getting_started/#4-log-in-using-the-cli 
+
 Prerequisite: install-argocd lab completed, all Argo-CD pods Running.

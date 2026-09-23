@@ -4,3 +4,9 @@ Inspect node status:
 kubectl get nodes
 ```
 Expected output: node status should show `Ready`.
+
+Inspect pod status:
+```bash
+kubectl get pod -A
+```
+Expected output: pod status should show `Running`.
