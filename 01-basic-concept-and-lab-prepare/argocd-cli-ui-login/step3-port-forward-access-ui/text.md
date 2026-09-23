@@ -7,5 +7,6 @@ kubectl port-forward svc/argocd-server -n argocd 30080:80
 Open browser and navigate to:
 [Argo CD Web-UI]({{TRAFFIC_HOST1_30080}})
 
-Login username: admin
+Login username: `admin`
+
 Password: decoded value obtained in step2.
