@@ -5,5 +5,7 @@
 3. Delete Application and observe prune clean‑up behaviour
 
 📖 Official reference: https://github.com/argoproj/argocd‑example‑apps/tree/main/guestbook
+
 Prerequisite: finish all prior phase‑2 modules.
+
 Complete step1 ~ step3.

@@ -2,7 +2,7 @@
 
 Delete Argo‑CD Application custom‑resource:
 ```bash
-argocd app delete guestbook-via-cli -N guestbook-via-cli
+argocd app delete guestbook-via-cli
 ```
 
 > Important default behaviour:
