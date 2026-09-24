@@ -24,10 +24,7 @@
       "foreground": "intro/foreground.sh"
     },
     "assets": {
-      "host01": [
-        {"file": "../../assets/foreground.sh", "target": "/tmp", "chmod": "+x"},
-        {"file": "../../assets/test.txt", "target": "/tmp", "chmod": "+w"}
-      ]
+      "host01": []
     }
   },
   "backend": {
