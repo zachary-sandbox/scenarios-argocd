@@ -1,6 +1,6 @@
 # Step1 Fill basic application information in UI
 1. Open Argo‑CD web UI, click **NEW APP** button.
-2. Application Name: give your application a name e.g `ui‑demo‑app`
+2. Application Name: give your application a name e.g. `guestbook-via-ui`
 3. Project: select `default` project (built‑in default project).
 4. Leave other options default for this lab.
 

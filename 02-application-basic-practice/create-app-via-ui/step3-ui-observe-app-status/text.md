@@ -7,5 +7,5 @@ Because we have not triggered sync action yet, git desired manifests have not be
 
 Verify Application CR exists via kubectl:
 ```bash
-kubectl get application -n argocd ui‑demo‑app
+kubectl get application guestbook-via-ui -n argocd
 ```

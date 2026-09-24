@@ -2,7 +2,7 @@
 
 Delete Argo‑CD Application custom‑resource:
 ```bash
-argocd app delete guestbook‑app
+argocd app delete guestbook-via-cli -N guestbook-via-cli
 ```
 
 > Important default behaviour:
@@ -12,4 +12,4 @@ Only the Application CR object itself gets removed.
 If you want cascade deletion of managed resources when deleting Application:
 You need to add finalizer: `resources-finalizer.argocd.argoproj.io` on Application metadata.
 
-Reference doc: https://argo-cd.readthedocs.io/en/stable/user-guide/delete_application/
+Reference doc: https://argo-cd.readthedocs.io/en/stable/user-guide/app_deletion/

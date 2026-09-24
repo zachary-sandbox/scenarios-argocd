@@ -1,7 +1,7 @@
 # Step2 Inspect application with argocd app get
 Run cli inspect command:
 ```bash
-argocd app get cli‑demo‑app
+argocd app get guestbook-via-cli
 ```
 
 This command prints:
@@ -11,5 +11,5 @@ This command prints:
 
 You can also filter output with‑o json for scripting:
 ```bash
-argocd app get cli‑demo‑app -o json
+argocd app get guestbook-via-cli -o json
 ```

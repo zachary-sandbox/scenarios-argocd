@@ -114,7 +114,7 @@ argocd app list
 argocd app get guestbook
 ```
 
-## Summary
+## Tips
 1. **kubectl apply (Declarative)**: Recommended for production. The Application manifest can be stored in Git, tracked by version control. Fully GitOps native approach.
 2. **argocd app create (Imperative CLI)**: Quick for lab/test environment. Creates Application directly via CLI without YAML file. Not easy to track changes.
 3. **ArgoCD Web UI**: GUI manual operation for demonstration. Good for beginners to understand parameters. Not suitable for automated CI/CD workflow.
