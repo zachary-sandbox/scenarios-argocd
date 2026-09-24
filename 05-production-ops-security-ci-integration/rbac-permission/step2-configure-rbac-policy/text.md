@@ -1,6 +1,6 @@
-# Step2 Configure RBAC policy in argocd‑cm
+# Step2 Configure RBAC policy in argocd-cm
 
-Edit argocd‑cm configmap:
+Edit argocd-cm configmap:
 ```bash
 kubectl edit configmap argocd-cm -n argocd
 ```
@@ -15,7 +15,7 @@ data:
     g, demo-user, role:app-readonly
 ```
 
-Save configmap change. Argo‑CD api‑server will reload policy.
+Save configmap change. Argo-CD api-server will reload policy.
 
 > 
-> Note: In real SSO scenario, demo‑user is the user name coming from OIDC identity provider.
+> Note: In real SSO scenario, demo-user is the user name coming from OIDC identity provider.

@@ -1,6 +1,6 @@
 {
   "title": "Helm Values and Parameters",
-  "description": "Use values.yaml, application helm parameters and multi‑values‑files for environment separation",
+  "description": "Use values.yaml, application helm parameters and multi-values-files for environment separation",
   "details": {
     "steps": [
       {
@@ -8,7 +8,7 @@
         "text": "step1-values-yaml-basic/text.md"
       },
       {
-        "title": "Override helm parameters inside Argo‑CD Application",
+        "title": "Override helm parameters inside Argo-CD Application",
         "text": "step2-helm-parameters-in-argocd/text.md"
       },
       {

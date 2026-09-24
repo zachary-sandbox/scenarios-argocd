@@ -1,5 +1,5 @@
 {
-  "title": "Argo‑CD Web UI & CLI Login Validation",
+  "title": "Argo-CD Web UI & CLI Login Validation",
   "description": "Retrieve admin password, test browser UI and argocd cli login",
   "details": {
     "steps": [
@@ -12,7 +12,7 @@
         "text": "step2-obtain-admin-initial-password/text.md"
       },
       {
-        "title": "Port‑Forward for Web‑UI Access",
+        "title": "Port-Forward for Web-UI Access",
         "text": "step3-port-forward-access-ui/text.md"
       },
       {

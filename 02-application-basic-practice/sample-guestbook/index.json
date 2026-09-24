@@ -1,14 +1,14 @@
 {
-  "title": "End‑to‑End Guestbook Sample Workflow",
-  "description": "Deploy official guestbook sample, test git‑driven image update and prune cleanup",
+  "title": "End-to-End Guestbook Sample Workflow",
+  "description": "Deploy official guestbook sample, test git-driven image update and prune cleanup",
   "details": {
     "steps": [
       {
-        "title": "Create guestbook Argo‑CD application and sync",
+        "title": "Create guestbook Argo-CD application and sync",
         "text": "step1-deploy-guestbook-app/text.md"
       },
       {
-        "title": "Modify image tag inside git manifest and watch auto‑sync",
+        "title": "Modify image tag inside git manifest and watch auto-sync",
         "text": "step2-modify-git-image-tag/text.md"
       },
       {

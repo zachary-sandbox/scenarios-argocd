@@ -1,6 +1,6 @@
 {
-  "title": "Argo Rollouts Canary & Blue‑Green Release",
-  "description": "Install Argo Rollouts controller, practice canary and blue‑green progressive release strategies",
+  "title": "Argo Rollouts Canary & Blue-Green Release",
+  "description": "Install Argo Rollouts controller, practice canary and blue-green progressive release strategies",
   "details": {
     "steps": [
       {
@@ -12,7 +12,7 @@
         "text": "step2-install-argorollouts/text.md"
       },
       {
-        "title": "Deploy Rollout resource, test canary and blue‑green strategy",
+        "title": "Deploy Rollout resource, test canary and blue-green strategy",
         "text": "step3-canary-bluegreen-practice/text.md"
       }
     ],

@@ -1,5 +1,5 @@
 {
-  "title": "Understand Argo‑CD Application CRD",
+  "title": "Understand Argo-CD Application CRD",
   "description": "Learn Application CRD spec fields, status fields and git tracking strategies",
   "details": {
     "steps": [
@@ -12,7 +12,7 @@
         "text": "step2-crd-status-fields/text.md"
       },
       {
-        "title": "Branch / Tag / Commit‑Hash tracking strategies",
+        "title": "Branch / Tag / Commit-Hash tracking strategies",
         "text": "step3-tracking-strategies/text.md"
       }
     ],

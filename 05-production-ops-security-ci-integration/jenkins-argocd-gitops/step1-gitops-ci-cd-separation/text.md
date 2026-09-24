@@ -10,7 +10,7 @@ GitOps split duties:
 3. Push image to container registry
 4. **Commit new image tag value into Git manifest repository**
 
-✅ Argo‑CD CD duties:
+✅ Argo-CD CD duties:
 1. Periodically fetch Git repository
 2. Detect manifest changes
 3. Render Helm/Kustomize manifests

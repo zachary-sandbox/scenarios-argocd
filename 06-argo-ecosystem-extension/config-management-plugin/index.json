@@ -1,14 +1,14 @@
 {
   "title": "Custom Config Management Plugin",
-  "description": "Understand CMP mechanism, register sidecar plugin and render custom manifests in Argo‑CD",
+  "description": "Understand CMP mechanism, register sidecar plugin and render custom manifests in Argo-CD",
   "details": {
     "steps": [
       {
-        "title": "Config‑Management‑Plugin working principle",
+        "title": "Config-Management-Plugin working principle",
         "text": "step1-cmp-concept/text.md"
       },
       {
-        "title": "Register custom plugin configmap and patch repo‑server",
+        "title": "Register custom plugin configmap and patch repo-server",
         "text": "step2-register-plugin/text.md"
       },
       {

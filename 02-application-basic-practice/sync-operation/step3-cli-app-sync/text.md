@@ -11,7 +11,7 @@ Command to trigger sync:
 argocd app sync guestbook-via-cli
 ```
 
-After running sync command, watch application status real‑time:
+After running sync command, watch application status real-time:
 ```bash
 argocd app watch guestbook-via-cli
 ```

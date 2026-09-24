@@ -1,6 +1,6 @@
 # Step3 Delete Application CR and observe resource cleanup behaviour
 
-Delete Argo‑CD Application custom‑resource:
+Delete Argo-CD Application custom-resource:
 ```bash
 argocd app delete guestbook-via-cli
 ```

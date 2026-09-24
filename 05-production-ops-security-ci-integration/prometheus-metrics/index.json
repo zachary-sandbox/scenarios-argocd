@@ -1,18 +1,18 @@
 {
-  "title": "Argo‑CD Prometheus Metrics",
-  "description": "Examine built‑in prometheus metrics endpoints, fetch and understand key application metrics",
+  "title": "Argo-CD Prometheus Metrics",
+  "description": "Examine built-in prometheus metrics endpoints, fetch and understand key application metrics",
   "details": {
     "steps": [
       {
-        "title": "Argo‑CD prometheus metrics overview",
+        "title": "Argo-CD prometheus metrics overview",
         "text": "step1-metrics-concept/text.md"
       },
       {
-        "title": "Enable metrics in argocd‑cm configmap",
+        "title": "Enable metrics in argocd-cm configmap",
         "text": "step2-enable-metrics/text.md"
       },
       {
-        "title": "Port‑forward service and fetch /metrics raw data",
+        "title": "Port-forward service and fetch /metrics raw data",
         "text": "step3-access-metrics-endpoint/text.md"
       }
     ],

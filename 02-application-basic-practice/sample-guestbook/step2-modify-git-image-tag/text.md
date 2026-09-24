@@ -4,7 +4,7 @@
 1. Edit deployment manifest inside git repo, change container image tag value.
    e.g. `gcr.io/google-samples/gb-frontend:v5` change to `gcr.io/google-samples/gb-frontend:v5-not-exist`
 2. Git commit and push the modification.
-3. Argo‑CD repo‑server periodically fetches git, detects revision change.
+3. Argo-CD repo-server periodically fetches git, detects revision change.
 4. Automated sync triggers, kubernetes performs rolling update for guestbook pods.
 
 Watch pod status change:

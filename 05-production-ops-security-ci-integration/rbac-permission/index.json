@@ -1,6 +1,6 @@
 {
-  "title": "Argo‑CD RBAC Permission Practice",
-  "description": "Understand Argo‑CD RBAC model, configure custom policy and validate user permissions",
+  "title": "Argo-CD RBAC Permission Practice",
+  "description": "Understand Argo-CD RBAC model, configure custom policy and validate user permissions",
   "details": {
     "steps": [
       {
@@ -8,11 +8,11 @@
         "text": "step1-rbac-basic-concept/text.md"
       },
       {
-        "title": "Add custom RBAC policy inside argocd‑cm ConfigMap",
+        "title": "Add custom RBAC policy inside argocd-cm ConfigMap",
         "text": "step2-configure-rbac-policy/text.md"
       },
       {
-        "title": "Validate read‑only and restricted application permission",
+        "title": "Validate read-only and restricted application permission",
         "text": "step3-validate-permission/text.md"
       }
     ],

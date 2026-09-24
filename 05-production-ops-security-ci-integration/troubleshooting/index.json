@@ -1,18 +1,18 @@
 {
-  "title": "Argo‑CD Troubleshooting Practice",
-  "description": "Debug repo‑server issues, OutOfSync diff, collect component logs for diagnosis",
+  "title": "Argo-CD Troubleshooting Practice",
+  "description": "Debug repo-server issues, OutOfSync diff, collect component logs for diagnosis",
   "details": {
     "steps": [
       {
-        "title": "Debug repo‑server git repository connection issues",
+        "title": "Debug repo-server git repository connection issues",
         "text": "step1-debug-repo-server/text.md"
       },
       {
-        "title": "Debug OutOfSync status using UI diff and argocd app‑diff cli",
+        "title": "Debug OutOfSync status using UI diff and argocd app-diff cli",
         "text": "step2-debug-outofsync/text.md"
       },
       {
-        "title": "Collect logs from different Argo‑CD components for diagnosis",
+        "title": "Collect logs from different Argo-CD components for diagnosis",
         "text": "step3-collect-component-logs/text.md"
       }
     ],

@@ -17,13 +17,13 @@ connectors:
     clientID: xxx-client-id
     clientSecret: xxx-client-secret
     orgs:
-    - name: my‑org
+    - name: my-org
 ```
 
 After configmap changed, restart dex pod to reload configuration:
 
 ```bash
-kubectl rollout restart deployment argocd‑dex -n argocd
+kubectl rollout restart deployment argocd-dex -n argocd
 ```
 
 > 

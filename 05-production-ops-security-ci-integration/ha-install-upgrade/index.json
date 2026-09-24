@@ -1,10 +1,10 @@
 {
   "title": "HA Deployment and Version Upgrade",
-  "description": "Study Argo‑CD high‑availability architecture, scale replicas and official upgrade workflow",
+  "description": "Study Argo-CD high-availability architecture, scale replicas and official upgrade workflow",
   "details": {
     "steps": [
       {
-        "title": "Argo‑CD HA architecture and replica settings",
+        "title": "Argo-CD HA architecture and replica settings",
         "text": "step1-ha-architecture/text.md"
       },
       {
@@ -12,7 +12,7 @@
         "text": "step2-modify-to-ha/text.md"
       },
       {
-        "title": "Follow official document to perform Argo‑CD version upgrade",
+        "title": "Follow official document to perform Argo-CD version upgrade",
         "text": "step3-official-upgrade-procedure/text.md"
       }
     ],

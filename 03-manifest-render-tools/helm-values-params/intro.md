@@ -5,5 +5,7 @@
 3. Manage multiple values files for different environments
 
 📖 Official reference: https://argo-cd.readthedocs.io/en/stable/user-guide/helm/#helm-values-files
+
 Prerequisite: completed helm-chart-basic lab.
+
 Complete step1 ~ step3 sequentially.

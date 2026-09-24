@@ -1,6 +1,6 @@
 # Step3 Configure trigger template and webhook receiver
 
-Modify argocd‑notifications‑cm configmap:
+Modify argocd-notifications-cm configmap:
 - Define template: webhook payload content
 - Define trigger: bind event to template
 - Define service: webhook url endpoint

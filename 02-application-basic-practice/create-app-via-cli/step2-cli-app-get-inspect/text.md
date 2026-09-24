@@ -5,11 +5,11 @@ argocd app get guestbook-via-cli
 ```
 
 This command prints:
-‑ Application source / destination configuration
-‑ Sync status, Health status
-‑ Resources tree of managed kubernetes objects
+- Application source / destination configuration
+- Sync status, Health status
+- Resources tree of managed kubernetes objects
 
-You can also filter output with‑o json for scripting:
+You can also filter output with-o json for scripting:
 ```bash
 argocd app get guestbook-via-cli -o json
 ```

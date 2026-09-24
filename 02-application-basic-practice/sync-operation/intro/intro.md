@@ -1,4 +1,4 @@
-### Lab Module: sync‑operation Manual Sync operation practice
+### Lab Module: sync-operation Manual Sync operation practice
 🎯 Module Objectives
 1. Simulate OutOfSync status by manually modifying cluster resource
 2. Trigger manual sync from Web UI

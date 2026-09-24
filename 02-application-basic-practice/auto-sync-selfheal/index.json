@@ -1,6 +1,6 @@
 {
-  "title": "Auto‑Sync, Self‑Heal and Prune Behaviour",
-  "description": "Test automated sync policy, self‑heal revert manual edits and prune delete resources",
+  "title": "Auto-Sync, Self-Heal and Prune Behaviour",
+  "description": "Test automated sync policy, self-heal revert manual edits and prune delete resources",
   "details": {
     "steps": [
       {
@@ -8,7 +8,7 @@
         "text": "step1-enable-automated-sync/text.md"
       },
       {
-        "title": "Test selfHeal auto‑revert manual cluster edits",
+        "title": "Test selfHeal auto-revert manual cluster edits",
         "text": "step2-test-selfheal-behaviour/text.md"
       },
       {

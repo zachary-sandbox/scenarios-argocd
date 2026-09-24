@@ -1,6 +1,6 @@
 {
   "title": "Plain YAML Manifest Source",
-  "description": "Use plain YAML directory as Argo‑CD application source, test add/update/delete manifests in git",
+  "description": "Use plain YAML directory as Argo-CD application source, test add/update/delete manifests in git",
   "details": {
     "steps": [
       {

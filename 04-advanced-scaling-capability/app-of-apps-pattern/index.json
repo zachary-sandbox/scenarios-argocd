@@ -1,10 +1,10 @@
 {
-  "title": "App‑of‑Apps Pattern",
-  "description": "Understand and practice App‑of‑Apps pattern for declarative multi‑application bootstrapping",
+  "title": "App-of-Apps Pattern",
+  "description": "Understand and practice App-of-Apps pattern for declarative multi-application bootstrapping",
   "details": {
     "steps": [
       {
-        "title": "Understand App‑of‑Apps concept",
+        "title": "Understand App-of-Apps concept",
         "text": "step1-pattern-concept/text.md"
       },
       {

@@ -1,10 +1,10 @@
 {
-  "title": "Multi‑Cluster Management",
+  "title": "Multi-Cluster Management",
   "description": "Register external Kubernetes cluster and deploy Argo CD Application to remote target cluster",
   "details": {
     "steps": [
       {
-        "title": "Multi‑cluster management model overview",
+        "title": "Multi-cluster management model overview",
         "text": "step1-multi-cluster-concept/text.md"
       },
       {

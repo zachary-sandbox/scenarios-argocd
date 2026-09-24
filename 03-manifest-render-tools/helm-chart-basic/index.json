@@ -1,10 +1,10 @@
 {
   "title": "Helm Chart Basic",
-  "description": "Understand Argo‑CD helm rendering without tiller, deploy chart stored in git",
+  "description": "Understand Argo-CD helm rendering without tiller, deploy chart stored in git",
   "details": {
     "steps": [
       {
-        "title": "Helm rendering concept inside Argo‑CD",
+        "title": "Helm rendering concept inside Argo-CD",
         "text": "step1-helm-concepts-for-argocd/text.md"
       },
       {

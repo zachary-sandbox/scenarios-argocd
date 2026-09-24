@@ -1,6 +1,6 @@
 {
   "title": "Kustomize Overlay Practice",
-  "description": "Learn kustomize base‑overlay pattern, image override and patch resources",
+  "description": "Learn kustomize base-overlay pattern, image override and patch resources",
   "details": {
     "steps": [
       {

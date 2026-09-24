@@ -8,7 +8,7 @@
         "text": "step1-dex-oidc-concept/text.md"
       },
       {
-        "title": "Modify argocd‑dex‑config configmap add OIDC connector",
+        "title": "Modify argocd-dex-config configmap add OIDC connector",
         "text": "step2-configure-dex-connector/text.md"
       },
       {

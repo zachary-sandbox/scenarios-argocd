@@ -1,6 +1,6 @@
 # Step1 RBAC basic concept
 
-Argo‑CD RBAC main elements:
+Argo-CD RBAC main elements:
 - **p (policy)**: define permission rule for subject
 - **g (group)**: assign user to group
 - Subject: user / group name
@@ -16,6 +16,6 @@ p, role:readonly, applications, sync, *, deny
 
 ```
 
-Difference between Kubernetes RBAC and Argo‑CD RBAC:
+Difference between Kubernetes RBAC and Argo-CD RBAC:
 - K8s RBAC controls access to kubernetes api resources.
-- Argo‑CD RBAC controls Argo‑CD application/project/repository inside argocd control plane.
+- Argo-CD RBAC controls Argo-CD application/project/repository inside argocd control plane.

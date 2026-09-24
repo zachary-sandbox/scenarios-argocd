@@ -8,11 +8,11 @@
         "text": "step1-prune-behavior/text.md"
       },
       {
-        "title": "Use compare‑options IgnoreExtraneous annotation",
+        "title": "Use compare-options IgnoreExtraneous annotation",
         "text": "step2-compare-options-ignore/text.md"
       },
       {
-        "title": "Configure global resource exclusions in argocd‑cm",
+        "title": "Configure global resource exclusions in argocd-cm",
         "text": "step3-global-resource-exclusions/text.md"
       }
     ],

@@ -1,10 +1,10 @@
 {
-  "title": "Jenkins Argo‑CD GitOps CI‑CD Integration",
-  "description": "Understand CI/CD separation pattern, Jenkins updates git manifests, Argo‑CD performs cluster sync",
+  "title": "Jenkins Argo-CD GitOps CI-CD Integration",
+  "description": "Understand CI/CD separation pattern, Jenkins updates git manifests, Argo-CD performs cluster sync",
   "details": {
     "steps": [
       {
-        "title": "Separate CI(Jenkins) and CD(Argo‑CD) responsibilities",
+        "title": "Separate CI(Jenkins) and CD(Argo-CD) responsibilities",
         "text": "step1-gitops-ci-cd-separation/text.md"
       },
       {
@@ -12,7 +12,7 @@
         "text": "step2-jenkins-update-git-manifest/text.md"
       },
       {
-        "title": "Argo‑CD detects git commit and perform automatic sync",
+        "title": "Argo-CD detects git commit and perform automatic sync",
         "text": "step3-argocd-auto-reconcile/text.md"
       }
     ],

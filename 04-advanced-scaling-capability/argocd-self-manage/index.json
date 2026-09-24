@@ -4,7 +4,7 @@
   "details": {
     "steps": [
       {
-        "title": "Self‑management concept and risk points",
+        "title": "Self-management concept and risk points",
         "text": "step1-self-manage-concept/text.md"
       },
       {
@@ -12,7 +12,7 @@
         "text": "step2-store-install-manifests-in-git/text.md"
       },
       {
-        "title": "Create self‑management Application CR",
+        "title": "Create self-management Application CR",
         "text": "step3-create-self-manage-app/text.md"
       }
     ],

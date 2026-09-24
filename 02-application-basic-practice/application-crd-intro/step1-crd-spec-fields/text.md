@@ -3,9 +3,9 @@
 1. **spec.source**: Git repository source configuration
     - repoURL: git repository address
     - targetRevision: branch / tag / commit hash
-    - path: sub‑directory path containing kubernetes manifests
+    - path: sub-directory path containing kubernetes manifests
 2. **spec.destination**: target deployment location
-    - server: target kubernetes cluster api‑server url
+    - server: target kubernetes cluster api-server url
     - namespace: target namespace for resources to be deployed
 3. **spec.syncPolicy**: sync behaviour rules
     - CreateNamespace: auto create namespace if not exist

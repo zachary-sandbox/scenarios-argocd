@@ -1,6 +1,6 @@
 {
-  "title": "Create Application via Argo‑CD Web UI",
-  "description": "Create Argo CD Application resource using web‑UI form",
+  "title": "Create Application via Argo-CD Web UI",
+  "description": "Create Argo CD Application resource using web-UI form",
   "details": {
     "steps": [
       {
@@ -12,7 +12,7 @@
         "text": "step2-ui-configure-source-dest/text.md"
       },
       {
-        "title": "Create app and observe real‑time UI status",
+        "title": "Create app and observe real-time UI status",
         "text": "step3-ui-observe-app-status/text.md"
       }
     ],

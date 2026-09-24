@@ -1,6 +1,6 @@
 {
-  "title": "Install Argo‑CD Official Manifests",
-  "description": "Deploy Argo‑CD using official install manifest with server‑side apply",
+  "title": "Install Argo-CD Official Manifests",
+  "description": "Deploy Argo-CD using official install manifest with server-side apply",
   "details": {
     "steps": [
       {

@@ -1,5 +1,5 @@
 {
-  "title": "Manual Sync Operation Hands‑on",
+  "title": "Manual Sync Operation Hands-on",
   "description": "Simulate OutOfSync status, practice UI sync and argocd app sync cli",
   "details": {
     "steps": [

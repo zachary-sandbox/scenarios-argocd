@@ -1,4 +1,4 @@
-# Step3 Canary and Blue‑Green practice
+# Step3 Canary and Blue-Green practice
 
 Create lab namespace:
 ```bash
@@ -48,4 +48,4 @@ kubectl argo rollouts get rollout canary-demo -n rollouts-demo
 ```
 
 Modify image tag to trigger canary progressive rollout.
-Similarly test blue‑green strategy by changing spec.strategy to blueGreen.
+Similarly test blue-green strategy by changing spec.strategy to blueGreen.

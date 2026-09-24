@@ -78,7 +78,7 @@ flowchart LR
    GitRepo -- trigger pipeline --> BuildStage
    BuildStage -- build & push container image --> ApplyStage
    ApplyStage -- execute kubectl apply --> LiveResources
-   note["⚠️ Risk: Manifest changes live in cluster without Git trace.<br/>Rollback needs re‑trigger old CI job."]
+   note["⚠️ Risk: Manifest changes live in cluster without Git trace.<br/>Rollback needs re-trigger old CI job."]
    style note fill: #fff3cd
 ```
 
@@ -91,8 +91,8 @@ flowchart LR
    end
 
    subgraph ArgoCDControlPlane
-      B["Repo‑Server"]
-      C["Application‑Controller"]
+      B["Repo-Server"]
+      C["Application-Controller"]
    end
 
    subgraph KubernetesCluster

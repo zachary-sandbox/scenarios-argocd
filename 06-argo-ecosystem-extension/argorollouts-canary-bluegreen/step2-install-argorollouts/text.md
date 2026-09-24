@@ -11,9 +11,9 @@ Wait for rollouts controller pod ready:
 kubectl get pods -n argo-rollouts
 ```
 
-Install argo‑rollouts kubectl plugin for cli observation:
+Install argo-rollouts kubectl plugin for cli observation:
 ```bash
-brew install argo‑rollouts-plugin
+brew install argo-rollouts-plugin
 # or download binary from github release page
 ```
 

@@ -1,6 +1,6 @@
 {
-  "title": "Argo‑CD Architecture Components & End‑to‑End Workflow",
-  "description": "Learn Argo‑CD five core components and full sync workflow",
+  "title": "Argo-CD Architecture Components & End-to-End Workflow",
+  "description": "Learn Argo-CD five core components and full sync workflow",
   "details": {
     "steps": [
       {
@@ -8,11 +8,11 @@
         "text": "step1-components-overview/text.md"
       },
       {
-        "title": "Repo‑Server Responsibilities",
+        "title": "Repo-Server Responsibilities",
         "text": "step2-repo-server-duty/text.md"
       },
       {
-        "title": "End‑to‑End Git Sync Workflow",
+        "title": "End-to-End Git Sync Workflow",
         "text": "step3-workflow-end-to-end/text.md"
       }
     ],

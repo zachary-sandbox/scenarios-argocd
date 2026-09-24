@@ -1,6 +1,6 @@
 {
   "title": "Private Git and Helm Repositories",
-  "description": "Configure credentials for private git and private helm repository in Argo‑CD",
+  "description": "Configure credentials for private git and private helm repository in Argo-CD",
   "details": {
     "steps": [
       {

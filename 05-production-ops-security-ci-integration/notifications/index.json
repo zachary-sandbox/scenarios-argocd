@@ -1,5 +1,5 @@
 {
-  "title": "Argo‑CD Notifications Practice",
+  "title": "Argo-CD Notifications Practice",
   "description": "Deploy notifications controller, configure trigger, template and webhook notification receiver",
   "details": {
     "steps": [
@@ -8,7 +8,7 @@
         "text": "step1-notifications-concept/text.md"
       },
       {
-        "title": "Install argo‑notifications controller manifests",
+        "title": "Install argo-notifications controller manifests",
         "text": "step2-deploy-notifications-controller/text.md"
       },
       {

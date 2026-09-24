@@ -5,7 +5,7 @@
 - Path: manifests folder path inside git repo e.g. `guestbook`
 
 ## Destination section
-- Cluster: select `in‑cluster` (current argo‑cd kubernetes cluster)
+- Cluster: select `in-cluster` (current argo-cd kubernetes cluster)
 - Namespace: input target namespace e.g. `guestbook-via-ui` (namespace will be created automatically)
 
-> Do NOT enable auto‑sync for this lab exercise.
+> Do NOT enable auto-sync for this lab exercise.
