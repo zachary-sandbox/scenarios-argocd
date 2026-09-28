@@ -1,4 +1,4 @@
-## Step2 Configure Helm values inside ArgoCD Application CR
+# Step2 Configure Helm values inside ArgoCD Application CR
 
 Two common ways to supply custom Helm values for ArgoCD:
 

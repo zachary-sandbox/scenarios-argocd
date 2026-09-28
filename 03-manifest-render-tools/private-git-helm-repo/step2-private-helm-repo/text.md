@@ -2,7 +2,14 @@
 
 Add a private Helm repository:
 ```bash
-argocd repo add https://your-private-helm-repo.example.com/charts   --type helm   --name private-helm-repo   --username your-helm-username   --password your-helm-password
+argocd repo add https://zachary-sandbox.github.io/charts/bitnami   --type helm   --name private-helm-repo   --username your-helm-username   --password your-helm-password
+```
+
+```bash
+argocd repo add https://zachary-sandbox.github.io/charts/bitnami \
+  --username ${YOUR_GIT_USERNAME} \
+  --password ${YOUR_GIT_TOKEN} \
+  --insecure-skip-server-verification=false
 ```
 
 Verify the repository is recognized:

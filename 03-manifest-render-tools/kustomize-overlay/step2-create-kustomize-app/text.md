@@ -1,16 +1,52 @@
 # Step2 Create Argo CD Application for Kustomize overlay
 
-Create a namespace:
-```bash
-kubectl create namespace kustomize-demo
+
+> Important for ArgoCD:
+>
+> When using Kustomize source in ArgoCD Application CR, `spec.source.path` points to **overlay directory** (e.g `k8s/overlays/prod`), ArgoCD repo-server internally runs kustomize build to render final manifests.
+
+ArgoCD Application example using Kustomize overlay from Git repo
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kustomize-demo
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/zachary-sandbox/argocd-example-apps.git
+    targetRevision: release/v1.0.0
+    # point path to overlay folder, NOT base folder
+    path: kustomize-examples/k8s/overlays/prod
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: prod
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
 ```
 
-Create Application pointing to a Kustomize overlay directory:
+Lab steps
+
+1. Apply the ArgoCD application manifest
+
 ```bash
-argocd app create kustomize-app   --repo https://github.com/argoproj/argocd-example-apps.git   --path kustomize-guestbook/overlays/staging   --dest-server https://kubernetes.default.svc   --dest-namespace kustomize-demo   --project default   --sync-policy automated --sync-policy prune=true --sync-policy self-heal=true
+kubectl apply -f kustomize-demo.yaml -n argocd
 ```
 
-Wait for sync:
+2. Trigger sync
+
 ```bash
-argocd app wait kustomize-app
+argocd app sync kustomize-demo
 ```
+
+3. Inspect final rendered resources
+
+```bash
+kubectl get deployment -n prod guestbook-ui -o yaml
+```
+
+Observation:
+Resources come from `base/`, while replicas, namespace, resource limits are injected by `overlays/prod`. Base files remain untouched; all environment customizations live inside overlay.

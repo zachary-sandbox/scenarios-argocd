@@ -81,11 +81,20 @@ ArgoCD only executes `helm template` (client-side rendering). It **does not crea
 
 ArgoCD runs `helm template` only and does not save Helm release history secrets. `helm rollback` is unavailable. Rollback is performed by reverting Git configuration and re-syncing application.
 
-Clean-up lab resources
+| Item | Helm v2 Tiller mode | ArgoCD Helm rendering |
+| --- | --- | --- |
+| Render location | In-cluster Tiller Pod | ArgoCD repo-server pod (`helm template`) |
+| Tiller component | Required | Not used at all |
+| Release history storage | Saved inside cluster(Secrets/ConfigMaps) | No helm release history stored |
+| Native helm commands (`helm rollback`, `helm history`) | Fully functional | Not work |
+| Source-of-truth | Helm release state inside cluster | Git repository / Application CR |
+| Lifecycle managed by | Helm(Tiller) | ArgoCD controller |
+
+</details>
+
+## Clean-up lab resources
 
 ```bash
 argocd app delete helm-guestbook -y
 kubectl delete ns helm-guestbook
 ```
-
-</details>

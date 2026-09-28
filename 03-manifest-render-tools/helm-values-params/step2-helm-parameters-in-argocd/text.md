@@ -16,7 +16,7 @@ spec:
 
 Or set via CLI:
 ```bash
-argocd app set helm-basic-app --helm-set replicaCount=3
+argocd app set helm-guestbook --helm-set replicaCount=3 --helm-set image.tag=1.26
 ```
 
 After the update, Argo CD re-renders the chart and syncs the change.

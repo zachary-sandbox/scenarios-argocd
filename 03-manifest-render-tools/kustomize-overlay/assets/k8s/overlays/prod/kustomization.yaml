@@ -1,0 +1,32 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+namespace: prod
+
+# prod replicas 3
+replicas:
+  - name: guestbook-ui
+    count: 3
+
+images:
+  - name: nginx
+    newTag: "1.25"
+
+patches:
+  # add resources limits for prod
+  - target:
+      kind: Deployment
+      name: guestbook-ui
+    patch: |-
+      - op: add
+        path: /spec/template/spec/containers/0/resources
+        value:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 300m
+            memory: 256Mi

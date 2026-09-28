@@ -1,7 +1,8 @@
 # Step1 Understand Kustomize base and overlay
 
-A typical Kustomize layout:
-```text
+e.g. `~/k8s`, a typical Kustomize layout:
+
+```
 k8s/
 ├── base/
 │   ├── deployment.yaml
@@ -14,15 +15,21 @@ k8s/
         └── kustomization.yaml
 ```
 
-The base contains common resources.
-The overlay adds environment-specific changes such as:
-- namespace
-- replicas
-- resource limits
-- env variables
-- patches
+The **base** contains common, shared core resources (Deployment, Service etc).
+The **overlay** adds environment-specific changes such as:
 
-Render an overlay locally:
+- namespace
+- replicas count
+- resource limits & requests
+- environment variables
+- strategic-merge / json6902 patches
+
+Render an overlay locally on workstation:
+
 ```bash
 kubectl kustomize overlays/dev
+```
+
+```bash
+kubectl kustomize overlays/prod
 ```
