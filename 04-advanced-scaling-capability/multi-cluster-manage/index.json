@@ -20,7 +20,8 @@
       "text": "finish.md"
     },
     "intro": {
-      "text": "intro.md"
+      "text": "intro/intro.md",
+      "foreground": "intro/foreground.sh"
     },
     "assets": {
       "host01": []
