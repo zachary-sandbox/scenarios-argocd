@@ -1,7 +1,7 @@
 # Step2 Create kind cluster argocd-lab
 
 ```bash
-kind create cluster --name argocd-lab --image kindest/node:v1.37.0
+kind create cluster --name 137 --image kindest/node:v1.37.0
 ```
 
 ```bash

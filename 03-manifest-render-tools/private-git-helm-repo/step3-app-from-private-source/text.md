@@ -2,12 +2,33 @@
 
 Once credentials are configured, create an Application from the private source:
 ```bash
-argocd app create private-app   --repo https://github.com/your-org/your-private-repo.git   --path manifests   --dest-server https://kubernetes.default.svc   --dest-namespace private-demo-ns   --project default   --sync-policy automated --sync-policy prune=true --sync-policy self-heal=true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: private-helm-guestbook
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: registry-1.docker.io
+    chart: zachary404/helm-guestbook
+    targetRevision: 0.1.0
+    helm:
+      releaseName: helm-guestbook
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: demo
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      prune: true
+      selfHeal: true
 ```
 
 Wait for sync:
 ```bash
-argocd app wait private-app
+argocd app wait private-helm-guestbook
 ```
 
 Troubleshooting tips:
