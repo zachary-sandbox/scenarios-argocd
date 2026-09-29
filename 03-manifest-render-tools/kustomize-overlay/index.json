@@ -24,11 +24,10 @@
       "foreground": "intro/foreground.sh"
     }
   },
-    "assets": {
-      "host01": [
-        {"file": "k8s/**/*.*", "target": "~/"}
-      ]
-    }
+  "assets": {
+    "host01": [
+      {"file": "k8s/**/*.*", "target": "~/"}
+    ]
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node-4GB"

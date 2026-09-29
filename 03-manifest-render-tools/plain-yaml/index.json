@@ -24,9 +24,8 @@
       "foreground": "intro/foreground.sh"
     }
   },
-    "assets": {
-      "host01": []
-    }
+  "assets": {
+    "host01": []
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node-4GB"

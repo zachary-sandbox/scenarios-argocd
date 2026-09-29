@@ -14,6 +14,10 @@
       {
         "title": "Inspect helm release output and notes",
         "text": "step3-helm-release-notes/text.md"
+      },
+      {
+        "title": "Inspect helm release output and notes",
+        "text": "step4-recommended-for-production/text.md"
       }
     ],
     "finish": {
